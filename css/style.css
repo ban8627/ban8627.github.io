@@ -62,11 +62,21 @@ body {
   top: 0;
   width: 100%;
   height: 80px;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  
   z-index: 9999;
   text-align: center;
 }
-
+.logo {
+  position: absolute;
+  left:5px;
+  display: block;
+  width:160px;
+  height:80px;
+  background: url('../images/Color\ logo\ -\ no\ background.png') no-repeat center;
+  background-size: 70%;
+  text-indent: -9999px;
+}
 .gnb {
   position: relative;
   display: inline-block;
@@ -86,17 +96,19 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
+  color:#fff;
 }
 
 .gnb>li>a:hover {
-  color: hotpink;
+  color:rgb(191, 191, 191);
+  border-bottom:1px solid #fff;
 }
 
 .visual {
   position: relative;
   display: block;
   height: 700px;
-  background-color: skyblue;
+  background: url('../images/programming-1873854_1920.png') no-repeat center;
 }
 
 .visual .inner {
