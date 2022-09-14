@@ -107,7 +107,7 @@ body {
 .visual {
   position: relative;
   display: block;
-  height: 700px;
+  height: 100vh;
   background: url('../images/programming-1873854_1920.png') no-repeat center;
 }
 
