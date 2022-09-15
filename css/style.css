@@ -161,10 +161,35 @@ body {
 .profile .inner {
   height: 100%;
 }
+.profile-txt {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translateY(-50%);
+  color:#fff;
+}
+.profile-txt h2 {
+  font-size: 42px;
+}
+.profile-txt p {
+  font-size: 28px;
+}
+.profile-photo {
+  position: absolute;
+  width:530px;
+  height:480px;
+  left:0;
+  top:50%;
+  transform: translateY(-50%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.profile-photo img {
+  height:100%;
+}
 .skill {
   position: relative;
   display: block;
-  height:500px;
+  height:600px;
   background-color: #fff;
 }
 .skill .inner {
@@ -176,8 +201,24 @@ body {
   font-size: 32px;
   font-weight: 700;
 }
-
-
+.skill-list {
+  position: relative;
+  width:100%;
+  height:100%;
+  text-align: left;
+}
+.skill-list li {
+  display: inline-block;
+  width:calc((100% / 3) - 40px);
+  height:calc((100% / 3) - 20px);
+  transition: all .3s;
+  margin:5px 10px;
+  border: 1px solid #000;
+}
+.skill-title {
+  display: block;
+  text-align: center;
+}
 
 .portfolio {
   position: relative;
@@ -208,7 +249,18 @@ body {
 .portfolio-wrap {
   position: relative;
 }
-
+.list-cate {
+  position: relative;
+  display: block;
+  width:100%;
+  height:60px;
+}
+.list-cate li {
+  display: inline-block;
+  width:calc((100% / 4) - 20px);
+  margin:0 auto;
+  border:1px solid #000;
+}
 .portfolio-cate {
   position: relative;
 }
@@ -221,7 +273,8 @@ body {
 .portfolio-list>li {
   position: relative;
   float: left;
-  width: 50%;
+  width: calc((100% / 3) - 40px);
+  margin:0 10px;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -229,6 +282,9 @@ body {
 .portfolio-list>li a {
   display: block;
   text-transform: uppercase;
+}
+.portfolio-list>li a img {
+  width:100%;
 }
 .portfolio-list>li a:hover {
   color: hotpink;
