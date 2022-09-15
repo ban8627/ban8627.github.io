@@ -125,18 +125,33 @@ body {
 .profile .inner {
   height: 100%;
 }
-
-.portfolio {
+.skill {
   position: relative;
   display: block;
+  height:500px;
+  background-color: #fff;
 }
-
-.portfolio h2 {
+.skill .inner {
+  height:100%;
+  padding:50px 0;
+}
+.skill h2 {
   text-align: center;
   font-size: 32px;
   font-weight: 700;
 }
 
+
+
+.portfolio {
+  position: relative;
+  display: block;
+}
+.portfolio h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
 .portfolio h3 {
   text-align: center;
   font-size: 24px;
