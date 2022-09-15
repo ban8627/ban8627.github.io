@@ -114,6 +114,42 @@ body {
 .visual .inner {
   height: 100%;
 }
+.visual-txt {
+  position: relative;
+  display: block;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.visual-txt > div {
+  position: absolute;
+  left:5%;
+  top:50%;
+  transform: translateY(-50%);
+  color:#fff;
+}
+.visual-txt h2 {
+  font-size: 75px;
+  margin-bottom:30px;
+}
+.visual-txt p {
+  font-size: 42px;
+}
+.visual-photo {
+  position: absolute;
+  width:50%;
+  height:100%;
+  right:0;
+  bottom:0;
+  background-color: #fff;
+  clip-path: polygon(51% 0, 100% 0, 100% 100%, 5% 100%);
+  overflow: hidden;
+}
+
+.visual-photo img {
+  transform: scaleX(-1);
+  height:100%;
+}
 
 .profile {
   position: relative;
