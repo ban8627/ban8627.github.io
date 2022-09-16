@@ -1,37 +1,56 @@
 window.onload = function () {
-  AOS.init()
+  AOS.init();
 
- /* ========================= possibility ========================= */
+  const labels = [
+    '책임감',
+    '집중력',
+    '팀워크',
+    '끈기',
+    '전문성'
+  ];
 
- new Chart(document.getElementById("radar-chart"), {
-  type: 'radar',
-  data: {
-    labels: ["책임감", "성실성", "도전정신", "응용력", "소통능력"],
+  const data = {
+    labels: labels,
     datasets: [{
-      fill: false,
-      backgroundColor: "rgba(255,99,132,0.2)",
-      borderColor: "rgba(255,99,132,1)",
-      radius:10,
-      pointRadius:5,
-      pointBorderColor: "#fff",
-      pointBackgroundColor: "rgba(255,99,132,1)",
-      pointBorderColor: "#fff",
-      data: [88, 78, 89, 95, 100],
-      padding:25,
-      length: {
-        min: 0,
-        max:100
-      }
+      backgroundColor: 'rgb(255, 255, 255,0.7)',
+      borderColor: 'rgb(0, 0, 0,0.5)',
+      title: {
+        display: false
+      },
+      data: [95, 90, 95, 100, 85],
     }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: 'Distribution in % of world population'
+  };
+
+  const config = {
+    type: 'radar',
+    data: data,
+    options: {
+      elements: {
+        pointBorderWidth:5
+      },
+      scale: {
+        min: 0,
+        max: 100,
+        suggestedMin: 0,
+        suggestedMax: 100,
+        stepSize: 5,
+        maxTicksLimit: 10,
+        ticks: {
+          font: {
+            size: 16
+          }
+        },
+      },
+      plugins: {
+        legend: {
+          display: false,
+        }
+      }
     }
-   },
-   scales: {
-  }
-});
-  // ======================
+  };
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
 };
