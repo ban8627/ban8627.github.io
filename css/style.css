@@ -378,6 +378,49 @@ body {
   height:100vh;
 }
 
+/* career */
+.career {
+  position: relative;
+  width:100%;
+  height:100vh;
+}
+.career .inner {}
+.career .title {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-weight: 600;
+  z-index: 10;
+}
+.career .title strong {
+  font-size: 100px;
+  font-weight: bold;
+}
+.career .title span {
+  font-size: 40px;
+}
+.career .inner > div {
+  position: absolute;
+  display: block;
+  width:45%;
+  height:420px;
+  background-color: #f1f1f1;
+  box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
+}
+.career-box {
+  left:0;
+  top:50%;
+  transform: translateY(-90%);
+}
+.exper-box {
+  right:0;
+  bottom:50%;
+  transform: translateY(90%);
+}
+
+
 /* contact */
 .contact {
   position: relative;
