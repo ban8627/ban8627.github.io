@@ -49,3 +49,32 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.wrap {
+  position: relative;
+  display: block;
+}
+.header {
+  position: fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:80px;
+  background-color: #fff;
+  z-index: 9999;
+}
+.gnb {
+  position: relative;
+  display: inline-block;
+}
+.gnb > li {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 0;
+}
+.gnb > li > a {
+  display: block;
+  line-height:80px;
+  
+}
