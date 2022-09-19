@@ -323,18 +323,20 @@ body {
 
 .pf-img-wrap {
   display: block;
-  width: 40%;
+  width: 30%;
   height:700px;
   background-color: #000;
-  padding:10px 0;
+  padding:20px;
 }
 .pf-img-wrap a {
   display: block;
-  width:80%;
+  width:100%;
+  height:100%;
   margin:0 auto;
 }
 .pf-img-wrap img {
   width:100%;
+  height:100%;
   filter:grayscale(1)
 }
 .pf-txt-wrap {
@@ -482,6 +484,8 @@ body {
   font-size: 70px;
   font-weight: 600;
   z-index: 10;
+
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.6);
 }
 .career .title strong {
   font-size: 100px;
@@ -558,9 +562,55 @@ body {
 }
 
 /* mbti */
+.mbti {
+  position: relative;
+  width:100%;
+  height:100vh;
+}
+.mbti .inner {
+  position: relative;
+  padding:0 5%;
+}
+.mbti-txt {
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-between;
+  padding:20px 0;
+}
+.mbti-txt .title {
+  font-size: 70px;
+  font-weight: 700;
+}
+.mbti-txt .title span {
+  margin:0 20px;
+  font-size: 40px;
+}
+.mbti-txt .desc {
+  font-size: 24px;
+}
+.mbti-txt .desc > span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.mbti-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width:100%;
+  height:calc(100% - 30%);
+}
+.mbti-wrap {
+  position: relative;
+  display: block;
+  width:600px;
+  height:600px;
+  background-color: #e7e7e7;
+  border-radius:15px;
+  box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
+}
 .poss-contents {
-  width:400px;
-  height:400px;
+  width:600px;
+  height:600px;
 }
 
 
