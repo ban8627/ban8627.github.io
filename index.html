@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
-  <link rel="shortcut icon" href="images/favicon.ico" />
-  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="images/android-icon-192x192.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
   <title>류지섭 포트폴리오</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,7 +60,13 @@
 <body>
   <div class="quick-wrap">
     <ul>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">Contact</a>
+      <ul class="con-list">
+        <li><a href="#">메일</a></li>
+        <li><a href="#">카카오</a></li>
+        <li><a href="#">전화</a></li>
+      </ul>
+    </li>
       <li><a href="./file/초안_[거주지 이동 가능]최선을 다하여 확실한 결과를 보여드리겠습니다.pdf">이력서</a></li>
     </ul>
   </div>
@@ -73,6 +82,11 @@
           <li><a href="#mbti">MBTI</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="side-menu">
+          <a href="#">
+            <div></div>
+          </a>
+        </div>
       </div>
     </header>
     <section class="visual" id="visual">
@@ -83,18 +97,18 @@
           </div>
         </div>
         <div class="visual-txt">
-          <h2 class="title">FrontEnd</h2>
-          <p class="desc">노력 인내 공감 공유 조화</p>
+          <h2 class="title">안녕하세요.</h2>
+          <p class="desc">프론트엔드 개발자 <b>류지섭</b> 입니다.</p>
         </div>
       </div>
     </section>
     <section class="profile" id="porfile">
       <div class="inner">
         <div class="profile-txt">
-          <h2 class="title">ID.<br><span>Jiseop</span></h2>
-          <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vero sapiente adipisci.
-            Corrupti temporibus quod inventore, natus doloremque sit magni incidunt et cum quia minus blanditiis.
-            Quisquam repudiandae laudantium enim!</p>
+          <h2 class="title">ID.<span>Jiseop</span></h2>
+          <p class="desc"><b>퍼블리셔에서 프론트엔드 개발자로</b><br>
+            안녕하세요. 저는 3년의 기간동안 퍼블리셔로 일을 한 경험하면서 프론트엔드라는 직종과  
+          </p>
         </div>
         <div class="profile-img">
           <div class="pi-top"></div>
@@ -253,14 +267,9 @@
       <div class="inner">
         <div class="mbti-txt">
           <h2 class="title">MBTI <span>&</span><br>Possibility</h2>
-          <p class="desc"><span>ISTP</span> 인 저는 호기심을 충족하고자 
-            코드를 뜯어보고 직접 조립하는 것을 즐깁니다.</p>
+          <p class="desc"><span>ISTP</span> 인 저는 호기심을 충족하고자
+            코드를 뜯어보고 직접 작성해 보는 것을 즐깁니다.</p>
         </div>
-<<<<<<< HEAD
-        <div class="poss-wrap">
-          <div class="poss-contents">
-            <canvas id="myChart" width="250" height="250"></canvas>
-=======
         <div class="mbti-content">
           <div class="mbti-wrap">
           </div>
@@ -269,7 +278,6 @@
               <p class="desc"></p>
               <canvas id="myChart"></canvas>
             </div>
->>>>>>> 3e8e698f7a02f4bf6ecdee33852803b287ac334c
           </div>
         </div>
       </div>
@@ -278,9 +286,18 @@
       <div class="inner">
         <h2 class="title">Contact</h2>
         <ul class="contact-list">
-          <li><a href="#">E-mail.ban8627@gmail.com</a></li>
-          <li><a href="#">KaKao.오픈채팅방</a></li>
-          <li><a href="#">HP. 010 8627 2824</a></li>
+          <li>
+            <i class="fas fa-paper-plane"></i>
+            <a href="#">E-mail.ban8627@gmail.com</a>
+          </li>
+          <li>
+            <i class="far fa-comments"></i>
+            <a href="#">KaKao.오픈채팅방</a>
+          </li>
+          <li>
+            <i class="fas fa-mobile-alt"></i>
+            <a href="#">HP. 010 8627 2824</a>
+          </li>
         </ul>
       </div>
     </section>
