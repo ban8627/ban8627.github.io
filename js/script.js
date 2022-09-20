@@ -1,6 +1,8 @@
 window.onload = function () {
   AOS.init();
 
+  
+
   const labels = [
     '책임감',
     '집중력',
