@@ -428,15 +428,17 @@ body {
   top: 240px;
   right: -300px;
   margin-bottom: 20px;
-  background: #000 url('../images/cat.jpg') no-repeat;
-  background-position: center center;
+  background: #000 url('../images/backgum.jpg') no-repeat;
+  background-position: top right;
+  background-size: 80%;
 }
 
 .pi-bottom {
   top: 620px;
   right: 0;
-  background: #000 url('../images/cat.jpg') no-repeat;
-  background-position: center left;
+  background: #000 url('../images/back.jpg') no-repeat;
+  background-position: left center;
+  background-size: 80%;
 }
 
 /* portfolio */
