@@ -632,6 +632,9 @@ body {
   width:100%;
   filter: grayscale(1);
 }
+.content-wrap li:hover img {
+  filter: none;
+}
 .pf-content-r {
   margin-top: 50px;
   padding-top: 150px;
