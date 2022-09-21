@@ -105,7 +105,6 @@ body {
   width:80px;
   height:80px;
   border-radius:50%;
-  overflow: hidden;
   margin-bottom:20px;
   background-color: #000;
 }
@@ -119,14 +118,73 @@ body {
   padding:25px 0;
   color:#fff;
 }
-.quick-wrap > ul > li > ul {
+.con-list {
   position: absolute;
   right:100%;
   top:0;
+  display: none;
+  width:80px;
+  height:180px;
 }
 
-
-
+.con-list.active {
+  display: block;
+  -webkit-animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+.con-list li {
+  position: relative;
+  display: block;
+  width:95%;
+  height:calc(100% / 3);
+  margin:0 auto;
+  margin-bottom:10px;
+}
+.con-list li:last-child {
+  margin-bottom:0;
+}
+.con-list li a {
+  position: relative;
+  display: block;
+  width:50px;
+  height:50px;
+  background-color: #333;
+  color:#fff;
+  text-align: center;
+  border-radius: 50%;
+  line-height:50px;
+}
+.con-list li a:hover {
+  background-color: rgb(126, 126, 126);
+}
 .wrap {
   position: relative;
   display: block;
@@ -379,7 +437,7 @@ body {
   left: 25px;
   top: 25px;
   display: block;
-  width: 560px;
+  width:50%;
   height: auto;
   z-index: 9;
   transition: all .5s;
@@ -495,31 +553,24 @@ body {
 
 .pf-img-wrap {
   display: block;
-  width: 30%;
+  width: 45%;
   height: 700px;
   background-color: #000;
-  padding: 20px;
   overflow: hidden;
 }
-.pf-img-wrap ul li {
-  display: none;
+
+.sw-portfolio-thum {
+  width:98%;
+  height:98%;
+  margin:5px auto;
 }
-.pf-img-wrap ul li.pf-active {
-  display: block;
-}
-.pf-img-wrap a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+
+.pf-img-wrap img {
+  width:100%;
+  filter: grayscale(1)
 }
 .pf-img-wrap a:hover img {
   filter: none;
-}
-.pf-img-wrap img {
-  width: 100%;
-  height: 100%;
-  filter: grayscale(1)
 }
 
 .pf-txt-wrap {
