@@ -1,650 +1,1088 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" href="images/android-icon-192x192.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>류지섭 포트폴리오</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="icon" type="image/png" href="images/favicon-32x32.png">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="images/android-icon-192x192.png">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-  <title>류지섭 포트폴리오</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta
+      name="description"
+      content="프론트엔드 개발자 류지섭 포트폴리오입니다."
+    />
+    <meta name="keywords" content="프론트엔드, 퍼블리셔, 개발자 포트폴리오" />
+    <meta name="author" content="류지섭" />
+    <meta property="og:title" content="프론트엔드 개발자 류지섭 포트폴리오" />
+    <meta
+      property="og:site_name"
+      content="프론트엔드 개발자 류지섭 포트폴리오"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="ban8627.github.io" />
+    <meta property="og:image" content="ban8627.github.io" />
+    <meta
+      property="og:description"
+      content="프론트엔드 개발자 류지섭 포트폴리오입니다."
+    />
 
-  <meta name="description" content="프론트엔드 개발자 류지섭 포트폴리오입니다." />
-  <meta name="keywords" content="프론트엔드, 퍼블리셔, 개발자 포트폴리오" />
-  <meta name="author" content="류지섭" />
-  <meta property="og:title" content="프론트엔드 개발자 류지섭 포트폴리오">
-  <meta property="og:site_name" content="프론트엔드 개발자 류지섭 포트폴리오" />
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="ban8627.github.io">
-  <meta property="og:image" content="ban8627.github.io">
-  <meta property="og:description" content="프론트엔드 개발자 류지섭 포트폴리오입니다." />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+      integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <script src="js/swiper/swiper.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- rader chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Progressbar 관련 -->
+    <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
-    integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-  <!--[if lt IE 9]> 
-    <script src="js/html5shiv.js"></script>
-  <![endif]-->
-  <script src="js/prefixfree.min.js"></script>
-  <script src="js/respond.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="js/swiper/swiper.min.css">
-  <script src="js/swiper/swiper.min.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/jquery.waypoints.js"></script>
-  <!-- rader chart -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- Progressbar 관련 -->
-  <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
-    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" type="text/css" href="js/lightbox2/css/lightbox.css">
-  <script src="js/lightbox2/js/lightbox.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-</head>
-
-<body>
-  <div class="go-top">
-    <button><i class="fas fa-arrow-up"></i></button>
-  </div>
-  <div class="quick-wrap">
-    <ul>
-      <li class="quick-contact"><a href="#">Contact</a>
-        <ul class="con-list">
-          <li><a href="#">메일</a></li>
-          <li><a href="#">카카오</a></li>
-          <li><a href="#">전화</a></li>
-        </ul>
-      </li>
-      <li><a href="./file/초안_[거주지 이동 가능]최선을 다하여 확실한 결과를 보여드리겠습니다.pdf">이력서</a></li>
-    </ul>
-  </div>
-  <div class="wrap">
-    <header class="header">
-      <div class="inner">
-        <a href="#" class="logo">류지섭 포트폴리오 사이트</a>
-        <ul class="gnb">
-          <li><a href="index.html">Intro</a></li>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#career">Career</a></li>
-          <li><a href="#mbti">MBTI</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="side-menu">
-          <a href="#">
-            <div></div>
-          </a>
-        </div>
-      </div>
-    </header>
-    <section class="visual" id="visual">
-      <div class="inner">
-        <div class="visual-bg">
-          <div class="visual-img">
-            <img src="images/sample.jpg" alt="">
+  <body>
+    <div class="go-top">
+      <button><i class="fas fa-arrow-up"></i></button>
+    </div>
+    <div class="quick-wrap">
+      <ul>
+        <li class="quick-contact">
+          <a href="#">Contact</a>
+          <ul class="con-list">
+            <li><a href="#">메일.</a></li>
+            <li><a href="#">카카오.</a></li>
+            <li><a href="#">GitHub.</a></li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="./file/초안_[거주지 이동 가능]최선을 다하여 확실한 결과를 보여드리겠습니다.pdf"
+            >이력서</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="wrap">
+      <header class="header">
+        <div class="inner">
+          <a href="#" class="logo">류지섭 포트폴리오 사이트</a>
+          <ul class="gnb">
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#mbti">MBTI</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="side-menu">
+            <a href="#">
+              <div></div>
+            </a>
           </div>
         </div>
-        <div class="visual-txt">
-          <h2 class="title">FrontEnd Developer</h2>
-          <p class="desc">코딩하는 남자 류지섭 입니다.</p>
-        </div>
-      </div>
-    </section>
-    <section class="profile" id="porfile">
-      <div class="inner">
-        <div class="profile-txt" data-aos="fade-up-right">
-          <h2 class="title">ID.<span>Jiseop</span></h2>
-          <p class="desc"><b>퍼블리셔에서 프론트엔드 개발자로</b><br>
-            저는 사회복지사로서 사회생활을 시작하였습니다. 사회생활을 하며 코딩에 대하여 접하게 되었고<br>
-            코딩에 흥미를 느끼게 되어 관련 수업을 받고 퍼블리셔로 업을 바꾸었습니다.<br>
-            지금은 퍼블리셔에서 한단계 더 성장하고싶어 프론트엔드 개발자 과정을 통하여 관련 업무 지식등을 쌓았습니다.
-          </p>
-        </div>
-        <div class="profile-img">
-          <div class="pi-top" data-aos="fade-up-left" data-aos-duration="1000"></div>
-          <div class="pi-bottom" data-aos="fade-up-left" data-aos-duration="1500"></div>
-        </div>
-      </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <div class="pf-top">
+      </header>
+      <section class="visual" id="visual">
         <div class="inner">
-          <h2 class="title">Portfolio</h2>
-          <div class="pf-content">
-            <div class="pf-img-wrap">
-              <div class="swiper-container sw-portfolio-thum">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="https://ban8627.github.io/stxconst/">
-                      <img src="images/stxconst.png" alt="">
-                    </a>
+          <div class="visual-bg">
+            <div class="visual-img">
+              <img src="images/sample.jpg" alt="" />
+            </div>
+          </div>
+          <div class="visual-txt">
+            <h2 class="title">FrontEnd Developer</h2>
+            <p class="desc">코딩하는 남자 류지섭 입니다.</p>
+          </div>
+        </div>
+      </section>
+      <section class="profile" id="porfile">
+        <div class="inner">
+          <div class="profile-txt" data-aos="fade-up-right">
+            <h2 class="title">ID.<span>Jiseop</span></h2>
+            <p class="desc">
+              <b>퍼블리셔에서 프론트엔드 개발자로</b><br />
+              저는 사회복지사로서 사회생활을 시작하였습니다. 사회생활을 하며
+              코딩에 대하여 접하게 되었고<br />
+              코딩에 흥미를 느끼게 되어 관련 수업을 받고 퍼블리셔로 업을
+              바꾸었습니다.<br />
+              지금은 퍼블리셔에서 한단계 더 성장하고싶어 프론트엔드 개발자
+              과정을 통하여 관련 업무 지식등을 쌓았습니다.
+            </p>
+          </div>
+          <div class="profile-img">
+            <div
+              class="pi-top"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+            ></div>
+            <div
+              class="pi-bottom"
+              data-aos="fade-up-left"
+              data-aos-duration="1500"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="pf-top">
+          <div class="inner">
+            <h2 class="title">Portfolio</h2>
+            <div class="pf-content">
+              <div class="pf-img-wrap">
+                <div class="swiper-container sw-portfolio-thum">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="https://ban8627.github.io/stxconst/">
+                        <img src="images/stxconst.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="https://ban8627.github.io/geojeyouth/">
+                        <img src="images/geoje.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="https://ban8627.github.io/masigray/">
+                        <img src="images/masigray.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="https://ban8627.github.io/noelohills/">
+                        <img src="images/noelo.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="https://ban8627.github.io/k-warter/">
+                        <img src="images/kwater.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="https://ban8627.github.io/jeongyookgak/">
+                        <img src="images/jeongyookgak.png" alt="" />
+                      </a>
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <a href="https://ban8627.github.io/geojeyouth/">
-                      <img src="images/geoje.png" alt="">
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="https://ban8627.github.io/masigray/">
-                      <img src="images/masigray.png" alt="">
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="https://ban8627.github.io/noelohills/">
-                      <img src="images/noelo.png" alt="">
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="https://ban8627.github.io/k-warter/">
-                      <img src="images/kwater.png" alt="">
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="https://ban8627.github.io/jeongyookgak/">
-                      <img src="images/jeongyookgak.png" alt="">
-                    </a>
+                  <div class="swiper-pagi-box">
+                    <div class="sw-portfolio"></div>
                   </div>
                 </div>
-                <div class="swiper-pagi-box">
-                  <div class="sw-portfolio"></div>
+              </div>
+              <div class="pf-txt-wrap">
+                <div class="swiper-container sw-portfolio-txt">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <span class="pf-category study vue"
+                        >Study Coding & Vue.js</span
+                      >
+                      <div class="txt-wrap">
+                        <h3 class="sub-title">STX Const</h3>
+                        <p class="sub-desc">STX 건설 클론코딩 & Vue.js</p>
+                        <h4 class="fix-el"></h4>
+                        <p class="fix-desc"></p>
+                        <ul class="pf-quick">
+                          <li>
+                            <a href="http://www.stxconst.co.kr/">Origin</a>
+                          </li>
+                          <li>
+                            <a href="https://ban8627.github.io/stxconst/"
+                              >Work</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://github.com/ban8627/stxconst.git"
+                              >GitHub</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://github.com/ban8627/vue-stx.git"
+                              >Vue-GitHub</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://ban8627.github.io/page-stx/"
+                              >Vue-Page</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <span class="pf-category study vue"
+                        >Study Coding & Vue.js</span
+                      >
+                      <div class="txt-wrap">
+                        <h3 class="sub-title">거제청년센터-이룸</h3>
+                        <p class="sub-desc">
+                          거제청년센터-이룸 클론코딩 & Vue.js
+                        </p>
+                        <h4 class="fix-el"></h4>
+                        <p class="fix-desc"></p>
+                        <ul class="pf-quick">
+                          <li>
+                            <a href="https://geojeyouth.com/web/">Origin</a>
+                          </li>
+                          <li>
+                            <a href="https://ban8627.github.io/geojeyouth/"
+                              >Work</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://github.com/ban8627/geojeyouth.git"
+                              >GitHub</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/ban8627/vue-geojeyouth.git"
+                              >Vue-GitHub</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://ban8627.github.io/page-geojeyouth/"
+                              >Vue-Page</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <span class="pf-category study vue"
+                        >Study Coding & Vue.js</span
+                      >
+                      <div class="txt-wrap">
+                        <h3 class="sub-title">마시그래이</h3>
+                        <p class="sub-desc">마시그래이 클론코딩 & Vue.js</p>
+                        <h4 class="fix-el"></h4>
+                        <p class="fix-desc"></p>
+                        <ul class="pf-quick">
+                          <li>
+                            <a
+                              href="https://www.masigray.com:5021/main/main.asp"
+                              >Origin</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://ban8627.github.io/masigray/"
+                              >Work</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://github.com/ban8627/masigray.git"
+                              >GitHub</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/ban8627/Vue-Masigray.git"
+                              >Vue-GitHub</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://ban8627.github.io/page-Masigray/"
+                              >Vue-Page</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <span class="pf-category study vue"
+                        >Study Coding & Vue.js</span
+                      >
+                      <div class="txt-wrap">
+                        <h3 class="sub-title">노엘로힐스</h3>
+                        <p class="sub-desc">노엘로힐스 클론코딩 & Vue.js</p>
+                        <h4 class="fix-el"></h4>
+                        <p class="fix-desc"></p>
+                        <ul class="pf-quick">
+                          <li><a href="https://noelohills.com/">Origin</a></li>
+                          <li>
+                            <a href="https://ban8627.github.io/noelohills/"
+                              >Work</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://github.com/ban8627/noelohills.git"
+                              >GitHub</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/ban8627/vue-noelohills.git"
+                              >Vue-GitHub</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://ban8627.github.io/page-noelo/"
+                              >Vue-Page</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <span class="pf-category study vue"
+                        >Study Coding & Vue.js</span
+                      >
+                      <div class="txt-wrap">
+                        <h3 class="sub-title">K-water</h3>
+                        <p class="sub-desc">K-water 클론코딩 & Vue.js</p>
+                        <h4 class="fix-el"></h4>
+                        <p class="fix-desc"></p>
+                        <ul class="pf-quick">
+                          <li><a href="https://noelohills.com/">Origin</a></li>
+                          <li>
+                            <a href="https://ban8627.github.io/noelohills/"
+                              >Work</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://github.com/ban8627/noelohills.git"
+                              >GitHub</a
+                            >
+                          </li>
+                          <!-- <li><a href="https://github.com/ban8627/vue-noelohills.git">Vue-GitHub</a></li>
+                        <li><a href="https://ban8627.github.io/page-noelo/">Vue-Page</a></li> -->
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <span class="pf-category study vue"
+                        >Study Coding & Vue.js</span
+                      >
+                      <div class="txt-wrap">
+                        <h3 class="sub-title">정육각</h3>
+                        <p class="sub-desc">정육각 클론코딩 & Vue.js</p>
+                        <h4 class="fix-el"></h4>
+                        <p class="fix-desc"></p>
+                        <ul class="pf-quick">
+                          <li><a href="https://noelohills.com/">Origin</a></li>
+                          <li>
+                            <a href="https://ban8627.github.io/noelohills/"
+                              >Work</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://github.com/ban8627/noelohills.git"
+                              >GitHub</a
+                            >
+                          </li>
+                          <!-- <li><a href="https://github.com/ban8627/vue-noelohills.git">Vue-GitHub</a></li>
+                        <li><a href="https://ban8627.github.io/page-noelo/">Vue-Page</a></li> -->
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="pf-txt-wrap">
-              <div class="swiper-container sw-portfolio-txt">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <span class="pf-category study vue">Study Coding & Vue.js</span>
-                    <div class="txt-wrap">
-                      <h3 class="sub-title">STX Const</h3>
-                      <p class="sub-desc">STX 건설 클론코딩 & Vue.js</p>
-                      <h4 class="fix-el"></h4>
-                      <p class="fix-desc"></p>
+          </div>
+        </div>
+        <div class="pf-mid">
+          <div class="inner">
+            <div class="pf-content-m">
+              <div class="pf-content-l">
+                <div class="content-txt swiper-container sw-study">
+                  <h3 class="sub-title">Study Clone List</h3>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li><a href="https://noelohills.com/">Origin</a></li>
+                        <li>
+                          <a href="https://ban8627.github.io/noelohills/"
+                            >Work</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/noelohills.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/ban8627/vue-noelohills.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-noelo/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li><a href="https://noelohills.com/">Origin</a></li>
+                        <li>
+                          <a href="https://ban8627.github.io/noelohills/"
+                            >Work</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/noelohills.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/ban8627/vue-noelohills.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-noelo/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li><a href="https://noelohills.com/">Origin</a></li>
+                        <li>
+                          <a href="https://ban8627.github.io/noelohills/"
+                            >Work</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/noelohills.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/ban8627/vue-noelohills.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-noelo/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li><a href="https://noelohills.com/">Origin</a></li>
+                        <li>
+                          <a href="https://ban8627.github.io/noelohills/"
+                            >Work</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/noelohills.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/ban8627/vue-noelohills.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-noelo/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-wrap swiper-container sw-study-thum">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/noelohills/">
+                        <img src="images/noelo.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/noelohills/">
+                        <img src="images/noelo.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/noelohills/">
+                        <img src="images/noelo.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/noelohills/">
+                        <img src="images/noelo.png" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pf-content-r">
+                <div class="content-wrap swiper-container sw-vue-thum">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/masigray/">
+                        <img src="images/masigray.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/masigray/">
+                        <img src="images/masigray.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/masigray/">
+                        <img src="images/masigray.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/masigray/">
+                        <img src="images/masigray.png" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-txt swiper-container sw-vueclone">
+                  <h3 class="sub-title">Vue.js Clone List</h3>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li>
+                          <a href="https://www.masigray.com:5021/main/main.asp"
+                            >Origin</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/masigray/">Work</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/masigray.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/Vue-Masigray.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-Masigray/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li>
+                          <a href="https://www.masigray.com:5021/main/main.asp"
+                            >Origin</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/masigray/">Work</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/masigray.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/Vue-Masigray.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-Masigray/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li>
+                          <a href="https://www.masigray.com:5021/main/main.asp"
+                            >Origin</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/masigray/">Work</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/masigray.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/Vue-Masigray.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-Masigray/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li>
+                          <a href="https://www.masigray.com:5021/main/main.asp"
+                            >Origin</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/masigray/">Work</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/masigray.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/Vue-Masigray.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-Masigray/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="title"><i>Portfolio</i></h2>
+        </div>
+        <div class="pf-bottom">
+          <div class="inner">
+            <div class="pf-content-m">
+              <div class="pf-content-l">
+                <div class="content-txt swiper-container sw-teml-clone">
+                  <h3 class="sub-title">Team Clone List</h3>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li>
+                          <a href="https://geojeyouth.com/web/">Origin</a>
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/geojeyouth/"
+                            >Work</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/geojeyouth.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/ban8627/vue-geojeyouth.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-geojeyouth/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li>
+                          <a href="https://geojeyouth.com/web/">Origin</a>
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/geojeyouth/"
+                            >Work</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/geojeyouth.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/ban8627/vue-geojeyouth.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-geojeyouth/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li>
+                          <a href="https://geojeyouth.com/web/">Origin</a>
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/geojeyouth/"
+                            >Work</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/geojeyouth.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/ban8627/vue-geojeyouth.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-geojeyouth/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="pf-quick">
+                        <li>
+                          <a href="https://geojeyouth.com/web/">Origin</a>
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/geojeyouth/"
+                            >Work</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/geojeyouth.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/ban8627/vue-geojeyouth.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-geojeyouth/"
+                            >Vue-Page</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-wrap swiper-container sw-team-thum">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/geojeyouth/">
+                        <img src="images/geoje.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/geojeyouth/">
+                        <img src="images/geoje.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/geojeyouth/">
+                        <img src="images/geoje.png" alt="" />
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/geojeyouth/">
+                        <img src="images/geoje.png" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pf-content-r">
+                <div class="content-wrap swiper-container sw-work-thum">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="https://ban8627.github.io/stxconst/">
+                        <img src="images/stxconst.png" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-txt swiper-container sw-work-clone">
+                  <h3 class="sub-title">Work List</h3>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                       <ul class="pf-quick">
                         <li><a href="http://www.stxconst.co.kr/">Origin</a></li>
-                        <li><a href="https://ban8627.github.io/stxconst/">Work</a></li>
-                        <li><a href="https://github.com/ban8627/stxconst.git">GitHub</a></li>
-                        <li><a href="https://github.com/ban8627/vue-stx.git">Vue-GitHub</a></li>
-                        <li><a href="https://ban8627.github.io/page-stx/">Vue-Page</a></li>
+                        <li>
+                          <a href="https://ban8627.github.io/stxconst/">Work</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/stxconst.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/vue-stx.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-stx/"
+                            >Vue-Page</a
+                          >
+                        </li>
                       </ul>
                     </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <span class="pf-category study vue">Study Coding & Vue.js</span>
-                    <div class="txt-wrap">
-                      <h3 class="sub-title">거제청년센터-이룸</h3>
-                      <p class="sub-desc">거제청년센터-이룸 클론코딩 & Vue.js</p>
-                      <h4 class="fix-el"></h4>
-                      <p class="fix-desc"></p>
+                    <div class="swiper-slide">
                       <ul class="pf-quick">
-                        <li><a href="https://geojeyouth.com/web/">Origin</a></li>
-                        <li><a href="https://ban8627.github.io/geojeyouth/">Work</a></li>
-                        <li><a href="https://github.com/ban8627/geojeyouth.git">GitHub</a></li>
-                        <li><a href="https://github.com/ban8627/vue-geojeyouth.git">Vue-GitHub</a></li>
-                        <li><a href="https://ban8627.github.io/page-geojeyouth/">Vue-Page</a></li>
+                        <li><a href="http://www.stxconst.co.kr/">Origin</a></li>
+                        <li>
+                          <a href="https://ban8627.github.io/stxconst/">Work</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/stxconst.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/vue-stx.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-stx/"
+                            >Vue-Page</a
+                          >
+                        </li>
                       </ul>
                     </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <span class="pf-category study vue">Study Coding & Vue.js</span>
-                    <div class="txt-wrap">
-                      <h3 class="sub-title">마시그래이</h3>
-                      <p class="sub-desc">마시그래이 클론코딩 & Vue.js</p>
-                      <h4 class="fix-el"></h4>
-                      <p class="fix-desc"></p>
+                    <div class="swiper-slide">
+                      <span>대박소스 : </span>
                       <ul class="pf-quick">
-                        <li><a href="https://www.masigray.com:5021/main/main.asp">Origin</a></li>
-                        <li><a href="https://ban8627.github.io/masigray/">Work</a></li>
-                        <li><a href="https://github.com/ban8627/masigray.git">GitHub</a></li>
-                        <li><a href="https://github.com/ban8627/Vue-Masigray.git">Vue-GitHub</a></li>
-                        <li><a href="https://ban8627.github.io/page-Masigray/">Vue-Page</a></li>
+                        <li><a href="http://www.stxconst.co.kr/">Origin</a></li>
+                        <li>
+                          <a href="https://ban8627.github.io/stxconst/">Work</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/stxconst.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/vue-stx.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-stx/"
+                            >Vue-Page</a
+                          >
+                        </li>
                       </ul>
                     </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <span class="pf-category study vue">Study Coding & Vue.js</span>
-                    <div class="txt-wrap">
-                      <h3 class="sub-title">노엘로힐스</h3>
-                      <p class="sub-desc">노엘로힐스 클론코딩 & Vue.js</p>
-                      <h4 class="fix-el"></h4>
-                      <p class="fix-desc"></p>
+                    <div class="swiper-slide">
+                      <span>대박소스 : </span>
                       <ul class="pf-quick">
-                        <li><a href="https://noelohills.com/">Origin</a></li>
-                        <li><a href="https://ban8627.github.io/noelohills/">Work</a></li>
-                        <li><a href="https://github.com/ban8627/noelohills.git">GitHub</a></li>
-                        <li><a href="https://github.com/ban8627/vue-noelohills.git">Vue-GitHub</a></li>
-                        <li><a href="https://ban8627.github.io/page-noelo/">Vue-Page</a></li>
+                        <li><a href="http://www.stxconst.co.kr/">Origin</a></li>
+                        <li>
+                          <a href="https://ban8627.github.io/stxconst/">Work</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/stxconst.git"
+                            >GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/ban8627/vue-stx.git"
+                            >Vue-GitHub</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://ban8627.github.io/page-stx/"
+                            >Vue-Page</a
+                          >
+                        </li>
                       </ul>
                     </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <span class="pf-category study vue">Study Coding & Vue.js</span>
-                    <div class="txt-wrap">
-                      <h3 class="sub-title">K-water</h3>
-                      <p class="sub-desc">K-water 클론코딩 & Vue.js</p>
-                      <h4 class="fix-el"></h4>
-                      <p class="fix-desc"></p>
-                      <ul class="pf-quick">
-                        <li><a href="https://noelohills.com/">Origin</a></li>
-                        <li><a href="https://ban8627.github.io/noelohills/">Work</a></li>
-                        <li><a href="https://github.com/ban8627/noelohills.git">GitHub</a></li>
-                        <!-- <li><a href="https://github.com/ban8627/vue-noelohills.git">Vue-GitHub</a></li>
-                        <li><a href="https://ban8627.github.io/page-noelo/">Vue-Page</a></li> -->
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <span class="pf-category study vue">Study Coding & Vue.js</span>
-                    <div class="txt-wrap">
-                      <h3 class="sub-title">정육각</h3>
-                      <p class="sub-desc">정육각 클론코딩 & Vue.js</p>
-                      <h4 class="fix-el"></h4>
-                      <p class="fix-desc"></p>
-                      <ul class="pf-quick">
-                        <li><a href="https://noelohills.com/">Origin</a></li>
-                        <li><a href="https://ban8627.github.io/noelohills/">Work</a></li>
-                        <li><a href="https://github.com/ban8627/noelohills.git">GitHub</a></li>
-                        <!-- <li><a href="https://github.com/ban8627/vue-noelohills.git">Vue-GitHub</a></li>
-                        <li><a href="https://ban8627.github.io/page-noelo/">Vue-Page</a></li> -->
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="pf-mid">
+      </section>
+      <section class="career" id="career">
         <div class="inner">
-          <div class="pf-content-m">
-            <div class="pf-content-l">
-              <div class="content-txt swiper-container sw-study">
-                <h3 class="sub-title">Study Clone List</h3>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://noelohills.com/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/noelohills/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/noelohills.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-noelohills.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-noelo/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://noelohills.com/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/noelohills/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/noelohills.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-noelohills.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-noelo/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://noelohills.com/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/noelohills/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/noelohills.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-noelohills.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-noelo/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://noelohills.com/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/noelohills/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/noelohills.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-noelohills.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-noelo/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="content-wrap swiper-container sw-study-thum">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/noelohills/">
-                      <img src="images/noelo.png" alt="">
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/noelohills/">
-                      <img src="images/noelo.png" alt="">
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/noelohills/">
-                      <img src="images/noelo.png" alt="">
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/noelohills/">
-                      <img src="images/noelo.png" alt="">
-                    </a>
+          <h2 class="title">
+            <strong>C</strong>areer <span>&#38;</span><br />
+            <strong>E</strong>xperience
+          </h2>
+          <div class="career-box">
+            <h3 class="sub-title">Career</h3>
+            <ul class="box-content">
+              <li>
+                <span>(주)아이디어콩</span>
+                <ul>
+                  <li>근속기간 : 19.03 ~ 22.04</li>
+                  <li>주요업무 : 홈페이지 개발 &#38; 유지보수 외 기타 업무</li>
+                </ul>
+              </li>
+              <li>
+                <span>(사)경상북도장애인재활협회</span>
+                <ul>
+                  <li>근속기간 : 16.07 ~ 18.2</li>
+                  <li>
+                    주요업무 : 장애인전담 보조 프로그램 운영 & 사회복지 프로그램
+                    개발 등
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="pf-content-r">
-              <div class="content-wrap swiper-container sw-vue-thum">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/masigray/">
-                      <img src="images/masigray.png" alt="">
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/masigray/">
-                      <img src="images/masigray.png" alt="">
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/masigray/">
-                      <img src="images/masigray.png" alt="">
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/masigray/">
-                      <img src="images/masigray.png" alt="">
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="content-txt swiper-container sw-vueclone">
-                <h3 class="sub-title">Vue.js Clone List</h3>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://www.masigray.com:5021/main/main.asp">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/masigray/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/masigray.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/Vue-Masigray.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-Masigray/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://www.masigray.com:5021/main/main.asp">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/masigray/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/masigray.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/Vue-Masigray.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-Masigray/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://www.masigray.com:5021/main/main.asp">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/masigray/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/masigray.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/Vue-Masigray.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-Masigray/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://www.masigray.com:5021/main/main.asp">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/masigray/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/masigray.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/Vue-Masigray.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-Masigray/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="title"><i>Portfolio</i></h2>
-      </div>
-      <div class="pf-bottom">
-        <div class="inner">
-          <div class="pf-content-m">
-            <div class="pf-content-l">
-              <div class="content-txt swiper-container sw-teml-clone">
-                <h3 class="sub-title">Team Clone List</h3>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://geojeyouth.com/web/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/geojeyouth/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/geojeyouth.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-geojeyouth.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-geojeyouth/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://geojeyouth.com/web/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/geojeyouth/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/geojeyouth.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-geojeyouth.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-geojeyouth/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://geojeyouth.com/web/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/geojeyouth/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/geojeyouth.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-geojeyouth.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-geojeyouth/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="https://geojeyouth.com/web/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/geojeyouth/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/geojeyouth.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-geojeyouth.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-geojeyouth/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="content-wrap swiper-container sw-team-thum">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/geojeyouth/">
-                      <img src="images/geoje.png" alt="">
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/geojeyouth/">
-                      <img src="images/geoje.png" alt="">
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/geojeyouth/">
-                      <img src="images/geoje.png" alt="">
-                    </a>
-                  </li>
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/geojeyouth/">
-                      <img src="images/geoje.png" alt="">
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="pf-content-r">
-              <div class="content-wrap swiper-container sw-work-thum">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <a href="https://ban8627.github.io/stxconst/">
-                      <img src="images/stxconst.png" alt="">
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="content-txt swiper-container sw-work-clone">
-                <h3 class="sub-title">Work List</h3>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="http://www.stxconst.co.kr/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/stxconst/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/stxconst.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-stx.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-stx/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="http://www.stxconst.co.kr/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/stxconst/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/stxconst.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-stx.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-stx/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="http://www.stxconst.co.kr/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/stxconst/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/stxconst.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-stx.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-stx/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                  <div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="http://www.stxconst.co.kr/">Origin</a></li>
-                      <li><a href="https://ban8627.github.io/stxconst/">Work</a></li>
-                      <li><a href="https://github.com/ban8627/stxconst.git">GitHub</a></li>
-                      <li><a href="https://github.com/ban8627/vue-stx.git">Vue-GitHub</a></li>
-                      <li><a href="https://ban8627.github.io/page-stx/">Vue-Page</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="career" id="career">
-      <div class="inner">
-        <h2 class="title">
-          <strong>C</strong>areer <span>&#38;</span><br>
-          <strong>E</strong>xperience
-        </h2>
-        <div class="career-box">
-          <h3 class="sub-title">Career</h3>
-          <ul class="box-content">
-            <li>
-              <span>(주)아이디어콩</span>
-              <ul>
-                <li>근속기간 : 19.03 ~ 22.04</li>
-                <li>주요업무 : 홈페이지 개발 &#38; 유지보수 외 기타 업무</li>
-              </ul>
-            </li>
-            <li>
-              <span>(사)경상북도장애인재활협회</span>
-              <ul>
-                <li>근속기간 : 16.07 ~ 18.2 </li>
-                <li>주요업무 : 장애인전담 보조 프로그램 운영 & 사회복지 프로그램 개발 등</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="exper-box">
-          <h3 class="sub-title">Edu <span>&#38;</span> Exp</h3>
-          <ul class="box-content">
-            <li>
-              <span>그린컴퓨터아트학원</span>
-              <ul>
-                <li>스마트혼합-뷰 활용 프론트엔드 개발자 양성과정</li>
-                <li>수강기간 : 22.05 ~ 22.10</li>
-                <li>주요내용 : 뷰 활용 등</li>
-              </ul>
-            </li>
-            <li>
-              <span>한국IT교육원</span>
-              <ul>
-                <li>웹디자인 기능사</li>
-                <li>수강기간 : 18.06 ~ 18.12</li>
-                <li>주요내용 : 포토샵 / 일러스트레이터 & 퍼블리싱 과정 </li>
-              </ul>
-            </li>
-            <li>
-              <span>계명대학교</span>
-              <ul>
-                <li>사회복지학과</li>
-                <li>기간 : 09.03 ~ 16.02</li>
-                <li>사회복지 전공 / 공모전 동아리(벗바리)장</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="mbti" id="mbti">
-      <div class="inner">
-        <div class="mbti-txt">
-          <h2 class="title">MBTI <span>&</span><br>Possibility</h2>
-          <p class="desc"><span>ISTP</span> 인 저는 호기심을 충족하고자
-            코드를 뜯어보고 직접 작성해 보는 것을 즐깁니다.</p>
-        </div>
-        <div class="mbti-content">
-          <div class="mbti-wrap">
-            <ul>
-              <li><span>책임감</span></li>
-              <li><span>집중력</span></li>
-              <li><span>팀워크</span></li>
-              <li><span>끈기</span></li>
-              <li><span>전문성</span></li>
+              </li>
             </ul>
           </div>
-          <div class="poss-wrap">
-            <div class="poss-contents">
-              <p class="desc"></p>
-              <canvas id="myChart"></canvas>
+          <div class="exper-box">
+            <h3 class="sub-title">Edu <span>&#38;</span> Exp</h3>
+            <ul class="box-content">
+              <li>
+                <span>그린컴퓨터아트학원</span>
+                <ul>
+                  <li>스마트혼합-뷰 활용 프론트엔드 개발자 양성과정</li>
+                  <li>수강기간 : 22.05 ~ 22.10</li>
+                  <li>주요내용 : 뷰 활용 등</li>
+                </ul>
+              </li>
+              <li>
+                <span>한국IT교육원</span>
+                <ul>
+                  <li>웹디자인 기능사</li>
+                  <li>수강기간 : 18.06 ~ 18.12</li>
+                  <li>주요내용 : 포토샵 / 일러스트레이터 & 퍼블리싱 과정</li>
+                </ul>
+              </li>
+              <li>
+                <span>계명대학교</span>
+                <ul>
+                  <li>사회복지학과</li>
+                  <li>기간 : 09.03 ~ 16.02</li>
+                  <li>사회복지 전공 / 공모전 동아리(벗바리)장</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="mbti" id="mbti">
+        <div class="inner">
+          <div class="mbti-txt">
+            <h2 class="title">MBTI <span>&</span><br />Possibility</h2>
+            <p class="desc">
+              <span>ISTP</span> 인 저는 호기심을 충족하고자 코드를 뜯어보고 직접
+              작성해 보는 것을 즐깁니다.
+            </p>
+          </div>
+          <div class="mbti-content">
+            <div class="mbti-wrap">
+              <ul>
+                <li>
+                  <span>책임감</span>
+                  <br />여기에는 관련된 내용이 들어갈 거에요.
+                </li>
+                <li>
+                  <span>집중력</span>
+                  <br />여기에는 관련된 내용이 들어갈 거에요.
+                </li>
+                <li>
+                  <span>팀워크</span>
+                  <br />여기에는 관련된 내용이 들어갈 거에요.
+                </li>
+                <li>
+                  <span>끈기</span>
+                  <br />여기에는 관련된 내용이 들어갈 거에요.
+                </li>
+                <li>
+                  <span>전문성</span>
+                  <br />여기에는 관련된 내용이 들어갈 거에요.
+                </li>
+              </ul>
+            </div>
+            <div class="poss-wrap">
+              <div class="poss-contents">
+                <p class="desc"></p>
+                <canvas id="myChart"></canvas>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="inner">
-        <h2 class="title">Contact</h2>
-        <ul class="contact-list">
-          <li>
-            <i class="fas fa-paper-plane"></i>
-            <a href="#">E-mail.ban8627@gmail.com</a>
-          </li>
-          <li>
-            <i class="far fa-comments"></i>
-            <a href="#">KaKao.오픈채팅방</a>
-          </li>
-          <li>
-            <i class="fas fa-mobile-alt"></i>
-            <a href="#">HP. 010 8627 2824</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="inner">
-        <p class="copy">All Rights Reserved. Design by JS RYU</p>
-      </div>
-    </footer>
-  </div>
-
-</body>
-
+      </section>
+      <section class="contact" id="contact">
+        <div class="inner">
+          <h2 class="title">Contact</h2>
+          <ul class="contact-list">
+            <li>
+              <i class="fas fa-paper-plane"></i>
+              <a href="#">E-mail.ban8627@gmail.com</a>
+            </li>
+            <li>
+              <i class="far fa-comments"></i>
+              <a href="#">KaKao.오픈채팅방</a>
+            </li>
+            <li>
+              <i class="fas fa-mobile-alt"></i>
+              <a href="https://github.com/ban8627/ban8627.git"
+                >Git. https://github.com/ban8627/ban8627.git
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="inner">
+          <p class="copy">All Rights Reserved. Design by JS RYU</p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
