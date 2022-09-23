@@ -43,6 +43,21 @@ body {
   color: #444;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 15%;
+  background: #4e4e4e;
+
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(178, 178, 178, 0.1);
+}
+
 /* 공통요소 */
 .clearfix::after {
   content: "";
@@ -71,6 +86,7 @@ body {
   display: block;
   z-index: 99999;
 }
+
 .go-top button {
   display: block;
   width: 50px;
@@ -82,6 +98,7 @@ body {
   background-color: #333;
   cursor: pointer;
 }
+
 .go-top button i {
   font-size: 35px;
   color: #fff;
@@ -95,12 +112,20 @@ body {
   transform: translate(-50%, -50%);
   display: block;
   z-index: 999;
+  transition: all 0.3s;
+  opacity: 0;
 }
+
+.quick-wrap.hide {
+  opacity: 1;
+}
+
 .quick-wrap > ul {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .quick-wrap > ul > li {
   position: relative;
   display: block;
@@ -110,9 +135,11 @@ body {
   margin-bottom: 20px;
   background-color: #000;
 }
+
 .quick-wrap > ul > li:hover {
   background-color: #cccccc;
 }
+
 .quick-wrap > ul > li > a {
   font-size: 20px;
   text-align: center;
@@ -120,6 +147,7 @@ body {
   padding: 25px 0;
   color: #fff;
 }
+
 .con-list {
   position: absolute;
   right: 100%;
@@ -134,6 +162,7 @@ body {
   -webkit-animation: scale-up-tr 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-tr 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
+
 @-webkit-keyframes scale-up-tr {
   0% {
     -webkit-transform: scale(0.5);
@@ -141,6 +170,7 @@ body {
     -webkit-transform-origin: 100% 0%;
     transform-origin: 100% 0%;
   }
+
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -148,6 +178,7 @@ body {
     transform-origin: 100% 0%;
   }
 }
+
 @keyframes scale-up-tr {
   0% {
     -webkit-transform: scale(0.5);
@@ -155,6 +186,7 @@ body {
     -webkit-transform-origin: 100% 0%;
     transform-origin: 100% 0%;
   }
+
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -162,6 +194,7 @@ body {
     transform-origin: 100% 0%;
   }
 }
+
 .con-list li {
   position: relative;
   display: block;
@@ -170,9 +203,11 @@ body {
   margin: 0 auto;
   margin-bottom: 10px;
 }
+
 .con-list li:last-child {
   margin-bottom: 0;
 }
+
 .con-list li a {
   position: relative;
   display: block;
@@ -184,9 +219,11 @@ body {
   border-radius: 50%;
   line-height: 50px;
 }
+
 .con-list li a:hover {
   background-color: rgb(126, 126, 126);
 }
+
 .wrap {
   position: relative;
   display: block;
@@ -352,10 +389,8 @@ body {
   padding: 0 20px;
   transition: all 0.5s;
   animation: fade-in 2.5s linear 0.5s;
-}
-
-.visual-img img {
-  width: 100%;
+  background: url("../images/sam.jpg") no-repeat center;
+  background-size: 90%;
   filter: grayscale(100%);
 }
 
@@ -496,7 +531,7 @@ body {
 .pi-bottom {
   top: 620px;
   right: 0;
-  background: #000 url("../images/back.jpg") no-repeat;
+  background: #000 url("../images/doong.jpg") no-repeat;
   background-position: left center;
   background-size: 80%;
 }
@@ -571,6 +606,7 @@ body {
   width: 100%;
   filter: grayscale(1);
 }
+
 .pf-img-wrap a:hover img {
   filter: none;
 }
@@ -583,9 +619,11 @@ body {
   position: relative;
   display: none;
 }
+
 .pf-txt-wrap > ul > li.pf-active {
   display: block;
 }
+
 .pf-category {
   font-size: 24px;
   font-weight: 600;
@@ -678,19 +716,23 @@ body {
   background-color: #e7e7e7;
   overflow: hidden;
 }
+
 .content-wrap li {
   width: 98%;
   height: 98%;
   margin: 0 auto;
 }
+
 .content-wrap li img {
   width: 100%;
   transition: all 0.5s;
   filter: grayscale(1);
 }
+
 .content-wrap li:hover img {
   filter: none;
 }
+
 .pf-content-r {
   margin-top: 50px;
   padding-top: 150px;
@@ -740,7 +782,9 @@ body {
   margin-top: 20px;
   padding-top: 0;
 }
-
+.sw-work-thum .swiper-slide {
+  background: #000 url("../images/ideakong-w.png") no-repeat center;
+}
 .pf-bottom .pf-content-r .content-txt {
   text-align: right;
 }
@@ -951,21 +995,25 @@ body {
   border-radius: 15px;
   box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
 }
+
 .mbti-wrap ul {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .mbti-wrap li {
   height: calc(100% / 5);
   padding: 15px 20px;
 }
+
 .mbti-wrap li span {
   font-size: 20px;
   font-weight: 700;
   color: #333;
 }
+
 .poss-contents {
   transition: all 0.5s;
   width: 600px;
@@ -1060,6 +1108,7 @@ body {
   font-weight: 600;
   line-height: 3.5em;
 }
+
 .contact-list li a::after {
   width: 5px;
   height: 5px;
@@ -1074,12 +1123,14 @@ body {
   border-radius: 50%;
   transition: width 0.3s;
 }
+
 .contact-list li:hover a::after {
   width: 100%;
   height: 2px;
   border-radius: 0;
   opacity: 1;
 }
+
 /* footer */
 .footer {
   position: relative;
@@ -1384,6 +1435,7 @@ body {
   .pf-mid .title {
     display: none;
   }
+
   /* pf-b */
   .pf-bottom {
     display: none;

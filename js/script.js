@@ -1,4 +1,11 @@
-$(document).ready(function () {});
+$(document).ready(function () {
+  $("#porfile").waypoint(() => {
+    $(".quick-wrap").toggleClass("hide");
+  });
+  $("#mbti").waypoint(function () {
+    $(".quick-wrap").toggleClass("hide");
+  });
+});
 window.onload = function () {
   AOS.init();
 
