@@ -5,6 +5,12 @@ $(document).ready(function () {
   $("#mbti").waypoint(function () {
     $(".quick-wrap").toggleClass("hide");
   });
+
+  // side - menu
+  $(".side-menu").click((event) => {
+    event.preventDefault();
+    $(".side-menu-dim").toggleClass("active");
+  });
 });
 window.onload = function () {
   AOS.init();
@@ -63,7 +69,6 @@ window.onload = function () {
     ".sw-portfolio-thum",
     "sw-portfolio-txt"
   );
-  console.log(pofol);
 
   // portfolio study swiper
   let swStudy = new Swiper(".sw-study-thum", {
@@ -114,6 +119,10 @@ window.onload = function () {
       delay: 2500,
       disableOnInteraction: false,
     },
+    pagination: {
+      el: ".sw-work-pagination",
+      type: "progressbar",
+    },
   });
   let swWorkLink = new Swiper(".sw-work-clone", {
     loop: true,
@@ -122,28 +131,35 @@ window.onload = function () {
   swWork.controller.control = swWorkLink;
 
   // mbti & possible
-  const labels = ["책임감", "집중력", "팀워크", "끈기", "전문성"];
+  const labels = ["책임감", "팀워크", "끈기", "전문성"];
 
   const data = {
     labels: labels,
     datasets: [
       {
-        backgroundColor: "rgb(255, 255, 255,0.7)",
+        backgroundColor: [
+          "rgb(225, 225, 225,0.7)",
+          "rgb(200, 200, 200,0.7)",
+          "rgb(150, 150, 150,0.7)",
+          "rgb(180, 180, 180,0.7)",
+        ],
         borderColor: "rgb(0, 0, 0,0.5)",
         title: {
-          display: false,
+          display: true,
         },
-        data: [95, 90, 95, 100, 85],
+        data: [95, 100, 100, 95],
       },
     ],
   };
 
   const config = {
-    type: "radar",
+    type: "pie",
     data: data,
     options: {
+      responsive: true,
+      maintainAspectRatio: false,
       elements: {
-        pointBorderWidth: 5,
+        pointBorderWidth: 1,
       },
       scale: {
         min: 0,
@@ -159,8 +175,11 @@ window.onload = function () {
         },
       },
       plugins: {
-        legend: {
-          display: false,
+        labels: {
+          render: "value",
+          fontColor: "black",
+          fontSize: 18,
+          precision: 2,
         },
       },
     },

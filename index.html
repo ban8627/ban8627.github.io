@@ -63,7 +63,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/waypoints.min.js"></script>
-    <!-- rader chart -->
+    <!-- chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Progressbar 관련 -->
     <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
@@ -84,18 +84,30 @@
     <div class="quick-wrap">
       <ul>
         <li class="quick-contact">
-          <a href="#">Contact</a>
+          <a href="#"><i class="fas fa-id-card"></i></a>
           <ul class="con-list">
-            <li><a href="#">메일.</a></li>
-            <li><a href="#">카카오.</a></li>
-            <li><a href="#">GitHub.</a></li>
+            <li>
+              <a href="mailto:ban8627@gmail.com"
+                ><i class="fas fa-paper-plane"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://open.kakao.com/o/sBqhyEDe" target="_blank"
+                ><i class="fas fa-comments"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/ban8627/ban8627.git" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
           </ul>
         </li>
         <li>
           <a
             href="./file/초안_[거주지 이동 가능]최선을 다하여 확실한 결과를 보여드리겠습니다.pdf"
-            >이력서</a
-          >
+            ><i class="fas fa-file-pdf"></i
+          ></a>
         </li>
       </ul>
     </div>
@@ -116,6 +128,25 @@
               <div></div>
             </a>
           </div>
+          <div class="side-menu-dim">
+            <div class="side-menu-wrap">
+              <h3 class="side-title">
+                프론트엔드 개발자 류지섭
+                <a href="#" class="close">
+                  <i class="fas fa-times"></i>
+                </a>
+              </h3>
+
+              <ul class="side-menu-list">
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#mbti">MBTI</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
       <section class="visual" id="visual">
@@ -135,8 +166,8 @@
             <h2 class="title">ID.<span>Jiseop</span></h2>
             <p class="desc">
               <b>퍼블리셔에서 프론트엔드 개발자로</b><br />
-              저는 사회복지사로서 사회생활을 시작하였습니다. 사회생활을 하며
-              코딩에 대하여 접하게 되었고<br />
+              저는 사회복지사로서 사회생활을 시작하였습니다.<br />사회생활을
+              하며 코딩에 대하여 접하게 되었고<br />
               코딩에 흥미를 느끼게 되어 관련 수업을 받고 퍼블리셔로 업을
               바꾸었습니다.<br />
               지금은 퍼블리셔에서 한단계 더 성장하고싶어 프론트엔드 개발자
@@ -798,11 +829,8 @@
                       <a href="#"> </a>
                       <span class="work-title">디에이치인더스트리</span>
                     </li>
-                    <li class="swiper-slide">
-                      <a href="#"> </a>
-                      <span class="work-title">대경경제연합회(?)</span>
-                    </li>
                   </ul>
+                  <span class="sw-work-pagination"></span>
                 </div>
                 <div class="content-txt swiper-container sw-work-clone">
                   <h3 class="sub-title">Work List</h3>
@@ -829,9 +857,7 @@
                     </div>
                     <div class="swiper-slide">
                       <ul class="pf-quick">
-                        <span class="work-title"
-                          >바른 S&F : 카페24 퍼블리싱</span
-                        >
+                        <span class="work-title">바른 S&F : 퍼블리싱</span>
                         <li><a href="#">Origin</a></li>
                       </ul>
                     </div>
@@ -861,14 +887,6 @@
                       <ul class="pf-quick">
                         <span class="work-title"
                           >디에이치인더스트리 주식회사 : 퍼블리싱</span
-                        >
-                        <li><a href="#">Origin</a></li>
-                      </ul>
-                    </div>
-                    <div class="swiper-slide">
-                      <ul class="pf-quick">
-                        <span class="work-title"
-                          >대경경제연합회(?) : 퍼블리싱</span
                         >
                         <li><a href="#">Origin</a></li>
                       </ul>
@@ -944,8 +962,10 @@
           <div class="mbti-txt">
             <h2 class="title">MBTI <span>&</span><br />Possibility</h2>
             <p class="desc">
-              <span>ISTP</span> 인 저는 호기심을 충족하고자 코드를 뜯어보고 직접
-              작성해 보는 것을 즐깁니다.
+              <span>ISTP</span>는 무엇을 만드는데 타고난 재능을 가지고
+              있습니다.<br />
+              완성이 되면 또 다른 과제로 옮겨 다니며 새로운 기술을 하나하나
+              터득해 나가는 유형입니다.
             </p>
           </div>
           <div class="mbti-content">
@@ -953,23 +973,22 @@
               <ul>
                 <li>
                   <span>책임감</span>
-                  <br />여기에는 관련된 내용이 들어갈 거에요.
-                </li>
-                <li>
-                  <span>집중력</span>
-                  <br />여기에는 관련된 내용이 들어갈 거에요.
+                  <br />주어진 일을 완성시키는 것 뿐만 아니라<br />
+                  조금 더 효율적인 코드가 없는지 확인하기 위해 노력합니다.
                 </li>
                 <li>
                   <span>팀워크</span>
-                  <br />여기에는 관련된 내용이 들어갈 거에요.
+                  <br />팀원들과 협력하면서 소통하는 개발자가 되겠습니다.
                 </li>
                 <li>
                   <span>끈기</span>
-                  <br />여기에는 관련된 내용이 들어갈 거에요.
+                  <br />막힘에 주저앉지 않고 해결할 수 있도록<br />
+                  여러 수단과 방법을 통해 문제 해결을 하고자 노력합니다.
                 </li>
                 <li>
                   <span>전문성</span>
-                  <br />여기에는 관련된 내용이 들어갈 거에요.
+                  <br />퍼블리셔로서 3년의 기간동안 작업을 하였으며, <br />
+                  프론트엔드개발자로서 교육을 통해 기초를 다졌습니다.
                 </li>
               </ul>
             </div>
@@ -988,16 +1007,18 @@
           <ul class="contact-list">
             <li>
               <i class="fas fa-paper-plane"></i>
-              <a href="#">E-mail.ban8627@gmail.com</a>
+              <a href="mailto:ban8627@gmail.com">E-mail.ban8627@gmail.com</a>
             </li>
             <li>
               <i class="far fa-comments"></i>
-              <a href="#">KaKao.오픈채팅방</a>
+              <a href="https://open.kakao.com/o/sBqhyEDe" target="_blank"
+                >KaKao.오픈채팅방</a
+              >
             </li>
             <li>
               <i class="fas fa-mobile-alt"></i>
-              <a href="https://github.com/ban8627/ban8627.git"
-                >Git. https://github.com/ban8627/ban8627.git
+              <a href="https://github.com/ban8627/ban8627.git" target="_blank"
+                >Git. 깃허브
               </a>
             </li>
           </ul>

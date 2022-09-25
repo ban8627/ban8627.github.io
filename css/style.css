@@ -111,7 +111,7 @@ body::-webkit-scrollbar-track {
   top: 80%;
   transform: translate(-50%, -50%);
   display: block;
-  z-index: 999;
+  z-index: 9999;
   transition: all 0.3s;
   opacity: 0;
 }
@@ -141,10 +141,10 @@ body::-webkit-scrollbar-track {
 }
 
 .quick-wrap > ul > li > a {
-  font-size: 20px;
+  font-size: 32px;
   text-align: center;
   display: block;
-  padding: 25px 0;
+  padding: 18px 0;
   color: #fff;
 }
 
@@ -350,7 +350,59 @@ body::-webkit-scrollbar-track {
   height: 4px;
   background-color: #fff;
 }
-
+.side-menu-dim {
+  position: fixed;
+  left: 100%;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
+}
+.side-menu-dim.active {
+  left: 0;
+  display: block;
+}
+.side-menu-wrap {
+  position: absolute;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+}
+.side-title {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  font-size: 32px;
+  line-height: 80px;
+  padding: 10px 5px;
+  border-bottom: 4px double rgba(0, 0, 0, 0.08);
+}
+.side-title .close {
+  margin-left: 30px;
+}
+.side-title .close i {
+  transition: all 0.5s;
+}
+.side-title .close:hover i {
+  transform: rotate(90deg);
+}
+.side-menu-list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.side-menu-list > li {
+  height: 80px;
+  font-size: 22px;
+  padding: 25px;
+}
+.side-menu-list > li:hover {
+  background-color: rgba(178, 178, 178, 0.1);
+}
 /* visual */
 .visual {
   position: relative;
@@ -615,15 +667,6 @@ body::-webkit-scrollbar-track {
   width: 40%;
 }
 
-.pf-txt-wrap > ul > li {
-  position: relative;
-  display: none;
-}
-
-.pf-txt-wrap > ul > li.pf-active {
-  display: block;
-}
-
 .pf-category {
   font-size: 24px;
   font-weight: 600;
@@ -782,18 +825,26 @@ body::-webkit-scrollbar-track {
   margin-top: 20px;
   padding-top: 0;
 }
-.sw-work-thm .swiper-wrapper {
+
+.sw-work-thum {
   position: relative;
 }
+
+.sw-work-thum .swiper-wrapper {
+  position: relative;
+}
+
 .sw-work-thum .swiper-slide {
   background: #000 url("../images/ideakong-w.png") no-repeat;
   background-position: 50% 80%;
 }
+
 .sw-work-thum .swiper-slide a {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .sw-work-thum .work-title {
   position: absolute;
   left: 50%;
@@ -809,6 +860,14 @@ body::-webkit-scrollbar-track {
   font-weight: 700;
   font-size: 38px;
 }
+
+.sw-work-thum .sw-work-pagination {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  height: 10px;
+}
+
 .pf-bottom .pf-content-r .content-txt {
   text-align: right;
 }
@@ -819,9 +878,6 @@ body::-webkit-scrollbar-track {
   width: 100%;
   height: 100vh;
   transition: all 0.5s;
-}
-
-.career .inner {
 }
 
 .career .title {
@@ -1028,7 +1084,7 @@ body::-webkit-scrollbar-track {
 }
 
 .mbti-wrap li {
-  height: calc(100% / 5);
+  height: calc(100% / 4);
   padding: 15px 20px;
 }
 
@@ -1238,8 +1294,8 @@ body::-webkit-scrollbar-track {
   }
 
   .poss-contents {
-    width: 500px;
-    height: 500px;
+    width: 50%;
+    height: 50%;
   }
 }
 
@@ -1363,23 +1419,45 @@ body::-webkit-scrollbar-track {
 }
 
 @media all and (max-width: 500px) {
+  .quick-wrap {
+    top: 90%;
+    width: 100%;
+    height: 100px;
+    transform: translate(0, 0);
+  }
+  .quick-wrap > ul {
+    display: flex;
+    align-items: center;
+  }
+  .quick-wrap > ul > li {
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+    background-color: #333;
+  }
+  .quick-wrap > ul > li > a {
+    font-size: 24px;
+    padding: 0;
+    line-height: 50px;
+  }
   .header {
     position: relative;
     background-color: rgba(0, 0, 0, 0.8);
   }
 
   .visual {
-    height: 50vh;
+    height: 80vh;
   }
 
   .visual .inner {
     background-color: #fff;
     padding: 0;
+    margin-bottom: 30px;
   }
 
   .visual .visual-bg {
     width: 100%;
-    height: 80%;
+    height: 95%;
     background-color: #d1d1d1;
   }
 
@@ -1389,7 +1467,58 @@ body::-webkit-scrollbar-track {
     width: 100%;
   }
 
-  /* pf-m */
+  .visual .visual-txt {
+    top: 30%;
+  }
+
+  .profile .profile-txt {
+  }
+
+  .profile .title {
+    font-size: 32px;
+  }
+
+  .profile .title span {
+    font-size: 24px;
+  }
+
+  .profile .desc {
+    font-size: 16px;
+  }
+
+  /* portfolio */
+  .pf-top .title {
+    left: 0;
+    top: -100px;
+    transform: rotate(0) translate(0, 0);
+  }
+  .pf-content {
+    display: block;
+    width: 100%;
+  }
+  .pf-img-wrap {
+    width: 98%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .sw-portfolio-thum {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .pf-txt-wrap {
+    width: 100%;
+    height: calc(100% - 400px);
+    overflow: hidden;
+  }
+  .pf-category {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .txt-wrap .pf-quick {
+    top: 100px;
+  }
+
   .pf-mid {
     position: relative;
     padding: 20px 0;
@@ -1397,7 +1526,7 @@ body::-webkit-scrollbar-track {
 
   .pf-mid .pf-content-m {
     position: relative;
-    padding: 40px 20px 0;
+    padding: 0;
     display: block;
     width: 100%;
     height: 100vh;
@@ -1408,12 +1537,19 @@ body::-webkit-scrollbar-track {
     height: 50%;
     margin-bottom: 30px;
   }
-
+  .sw-study-thum {
+    margin-bottom: 30px;
+  }
   .pf-content-l {
     position: relative;
     padding-bottom: 0;
   }
-
+  .pf-bottom .pf-content-m {
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
   .content-txt {
     position: absolute;
     left: 50%;
@@ -1462,9 +1598,24 @@ body::-webkit-scrollbar-track {
 
   /* pf-b */
   .pf-bottom {
-    display: none;
+  }
+  .career {
+    height: 100%;
+    padding: 30px 0;
   }
 
+  .career .title {
+    top: 40%;
+    font-size: 30px;
+  }
+
+  .career .title strong {
+    font-size: 35px;
+  }
+
+  .career .title span {
+    font-size: 20x;
+  }
   .mbti {
     height: 100%;
   }
@@ -1490,7 +1641,8 @@ body::-webkit-scrollbar-track {
   }
 
   .mbti-txt .desc {
-    font-size: 22px;
+    padding: 20px;
+    font-size: 18px;
   }
 
   .poss-contents {
