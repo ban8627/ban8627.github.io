@@ -9,7 +9,7 @@ $(document).ready(function () {
   // side - menu
   $(".side-menu").click((event) => {
     event.preventDefault();
-    $(".side-menu-dim").toggleClass("active");
+    $(".side-menu-dim").animate({ left: 0, display: "block" }, 800);
   });
 });
 window.onload = function () {
@@ -137,15 +137,10 @@ window.onload = function () {
     labels: labels,
     datasets: [
       {
-        backgroundColor: [
-          "rgb(225, 225, 225,0.7)",
-          "rgb(200, 200, 200,0.7)",
-          "rgb(150, 150, 150,0.7)",
-          "rgb(180, 180, 180,0.7)",
-        ],
+        backgroundColor: ["rgb(180, 180, 180,0.7)"],
         borderColor: "rgb(0, 0, 0,0.5)",
         title: {
-          display: true,
+          display: false,
         },
         data: [95, 100, 100, 95],
       },
@@ -153,7 +148,7 @@ window.onload = function () {
   };
 
   const config = {
-    type: "pie",
+    type: "radar",
     data: data,
     options: {
       responsive: true,
@@ -166,7 +161,7 @@ window.onload = function () {
         max: 100,
         suggestedMin: 0,
         suggestedMax: 100,
-        stepSize: 5,
+        stepSize: 4,
         maxTicksLimit: 10,
         ticks: {
           font: {
@@ -175,11 +170,8 @@ window.onload = function () {
         },
       },
       plugins: {
-        labels: {
-          render: "value",
-          fontColor: "black",
-          fontSize: 18,
-          precision: 2,
+        legend: {
+          display: false,
         },
       },
     },
