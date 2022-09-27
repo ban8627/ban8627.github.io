@@ -7,6 +7,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "establishRetrosansOTF";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff")
@@ -14,6 +15,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "JSongMyung-Regular-KO";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2")
@@ -127,11 +129,11 @@ body::-webkit-scrollbar-track {
   display: block;
   z-index: 9999;
   transition: all 0.3s;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .quick-wrap.hide {
-  opacity: 1;
+  visibility: visible;
 }
 
 .quick-wrap > ul {
@@ -232,6 +234,7 @@ body::-webkit-scrollbar-track {
   text-align: center;
   border-radius: 50%;
   line-height: 50px;
+  font-size: 20px;
 }
 
 .con-list li a:hover {
@@ -247,6 +250,7 @@ body::-webkit-scrollbar-track {
 
 /* header */
 .header {
+  font-family: "establishRetrosansOTF";
   position: fixed;
   left: 0;
   top: 0;
@@ -364,6 +368,7 @@ body::-webkit-scrollbar-track {
   height: 4px;
   background-color: #fff;
 }
+
 .side-menu-dim {
   position: fixed;
   left: 100%;
@@ -374,10 +379,12 @@ body::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.6);
   transition: all 0.5s;
 }
+
 .side-menu-dim.active {
   left: 0;
   display: block;
 }
+
 .side-menu-wrap {
   position: absolute;
   right: 0;
@@ -385,6 +392,7 @@ body::-webkit-scrollbar-track {
   height: 100%;
   background-color: #fff;
 }
+
 .side-title {
   position: relative;
   width: 100%;
@@ -394,29 +402,36 @@ body::-webkit-scrollbar-track {
   padding: 10px 5px;
   border-bottom: 4px double rgba(0, 0, 0, 0.08);
 }
+
 .side-title .close {
   margin-left: 30px;
 }
+
 .side-title .close i {
   transition: all 0.5s;
 }
+
 .side-title .close:hover i {
   transform: rotate(90deg);
 }
+
 .side-menu-list {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .side-menu-list > li {
   height: 80px;
   font-size: 22px;
   padding: 25px;
 }
+
 .side-menu-list > li:hover {
   background-color: rgba(178, 178, 178, 0.1);
 }
+
 /* visual */
 .visual {
   font-family: "establishRetrosansOTF";
@@ -568,8 +583,9 @@ body::-webkit-scrollbar-track {
 }
 
 .profile .desc b {
-  font-size: 24px;
-  font-family: "국립박물관문화재단클래식B";
+  font-size: 26px;
+  font-family: "JSongMyung-Regular-KO";
+  margin: 0 15px;
 }
 
 .profile .profile-img {
@@ -681,6 +697,7 @@ body::-webkit-scrollbar-track {
 .pf-img-wrap a:hover img {
   filter: none;
 }
+
 .pf-img-wrap .work-clone {
   width: 98%;
   height: 98%;
@@ -695,6 +712,7 @@ body::-webkit-scrollbar-track {
   padding-top: 50px;
   background: url("../images/ideakong-w.png") no-repeat center;
 }
+
 .pf-txt-wrap {
   width: 40%;
 }
@@ -904,7 +922,9 @@ body::-webkit-scrollbar-track {
 .pf-bottom .pf-content-r .content-txt {
   text-align: right;
 }
-
+.sw-work-thum .sw-work-pagination .swiper-pagination-progressbar-fill {
+  background-color: #444;
+}
 /* career */
 .career {
   position: relative;
@@ -1125,6 +1145,7 @@ body::-webkit-scrollbar-track {
 }
 
 .mbti-wrap li span {
+  font-family: "JSongMyung-Regular-KO";
   font-size: 20px;
   font-weight: 700;
   color: #333;
@@ -1463,21 +1484,25 @@ body::-webkit-scrollbar-track {
     height: 100px;
     transform: translate(0, 0);
   }
+
   .quick-wrap > ul {
     display: flex;
     align-items: center;
   }
+
   .quick-wrap > ul > li {
     width: 50px;
     height: 50px;
     margin: 0 30px;
     background-color: #333;
   }
+
   .quick-wrap > ul > li > a {
     font-size: 24px;
     padding: 0;
     line-height: 50px;
   }
+
   .header {
     position: relative;
     background-color: rgba(0, 0, 0, 0.8);
@@ -1530,29 +1555,35 @@ body::-webkit-scrollbar-track {
     top: -100px;
     transform: rotate(0) translate(0, 0);
   }
+
   .pf-content {
     display: block;
     width: 100%;
   }
+
   .pf-img-wrap {
     width: 98%;
     height: 400px;
     margin: 0 auto;
   }
+
   .sw-portfolio-thum {
     width: 100%;
     height: 100%;
     margin: 0;
   }
+
   .pf-txt-wrap {
     width: 100%;
     height: calc(100% - 400px);
     overflow: hidden;
   }
+
   .pf-category {
     font-size: 18px;
     font-weight: 600;
   }
+
   .txt-wrap .pf-quick {
     top: 100px;
   }
@@ -1575,19 +1606,23 @@ body::-webkit-scrollbar-track {
     height: 50%;
     margin-bottom: 30px;
   }
+
   .sw-study-thum {
     margin-bottom: 30px;
   }
+
   .pf-content-l {
     position: relative;
     padding-bottom: 0;
   }
+
   .pf-bottom .pf-content-m {
     padding: 0;
     display: block;
     width: 100%;
     height: 100vh;
   }
+
   .content-txt {
     position: absolute;
     left: 50%;
@@ -1637,6 +1672,7 @@ body::-webkit-scrollbar-track {
   /* pf-b */
   .pf-bottom {
   }
+
   .career {
     height: 100%;
     padding: 30px 0;
@@ -1654,6 +1690,7 @@ body::-webkit-scrollbar-track {
   .career .title span {
     font-size: 20x;
   }
+
   .mbti {
     height: 100%;
   }

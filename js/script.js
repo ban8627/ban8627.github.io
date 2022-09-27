@@ -11,9 +11,6 @@ $(document).ready(function () {
     event.preventDefault();
     $(".side-menu-dim").animate({ left: 0, display: "block" }, 800);
   });
-});
-window.onload = function () {
-  AOS.init();
 
   // go-top
   document.querySelector(".go-top > button").addEventListener("click", () => {
@@ -64,7 +61,12 @@ window.onload = function () {
     },
   });
   allPFthum.controller.control = allPFLink;
-
+  $(".sw-portfolio-thum").mouseenter(() => {
+    allPFthum.autoplay.stop();
+  });
+  $(".sw-portfolio-thum").mouseleave(() => {
+    allPFthum.autoplay.start();
+  });
   const pofol = document.querySelectorAll(
     ".sw-portfolio-thum",
     "sw-portfolio-txt"
@@ -130,9 +132,8 @@ window.onload = function () {
   });
   swWork.controller.control = swWorkLink;
 
-  // mbti & possible
+  // mbti & possible chart
   const labels = ["책임감", "팀워크", "끈기", "전문성"];
-
   const data = {
     labels: labels,
     datasets: [
@@ -146,7 +147,6 @@ window.onload = function () {
       },
     ],
   };
-
   const config = {
     type: "radar",
     data: data,
@@ -176,6 +176,8 @@ window.onload = function () {
       },
     },
   };
-
   const myChart = new Chart(document.getElementById("myChart"), config);
+});
+window.onload = function () {
+  AOS.init();
 };
