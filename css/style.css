@@ -595,9 +595,12 @@ body::-webkit-scrollbar-track {
 }
 
 .profile .desc {
+  background-color: #fff;
+  padding: 50px 0;
   font-size: 20px;
   font-weight: 600;
   line-height: 60px;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
 .profile .desc b {
