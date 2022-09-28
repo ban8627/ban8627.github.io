@@ -33,24 +33,18 @@ $(document).ready(function () {
   let allPFthum = new Swiper(".sw-portfolio-thum", {
     effect: "cube",
     grabCursor: true,
+    touchRatio: 0,
     cubeEffect: {
       shadow: true,
       slideShadows: true,
       shadowOffset: 20,
       shadowScale: 0.94,
     },
-    pagination: {
-      el: ".sw-portfolio",
-    },
+
     loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
   });
   let allPFLink = new Swiper(".sw-portfolio-txt", {
     loop: true,
-    touchRatio: 0,
     effect: "cube",
     grabCursor: true,
     cubeEffect: {
@@ -59,22 +53,32 @@ $(document).ready(function () {
       shadowOffset: 0,
       shadowScale: 0,
     },
+    pagination: {
+      el: ".sw-porfol-pagi",
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".sw-port-next",
+      prevEl: ".sw-port-prev",
+    },
   });
-  allPFthum.controller.control = allPFLink;
-  $(".sw-portfolio-thum").mouseenter(() => {
-    allPFthum.autoplay.stop();
+
+  allPFLink.controller.control = allPFthum;
+  $(".sw-portfolio-txt").mouseenter(() => {
+    allPFLink.autoplay.stop();
   });
-  $(".sw-portfolio-thum").mouseleave(() => {
-    allPFthum.autoplay.start();
+  $(".sw-portfolio-txt").mouseleave(() => {
+    allPFLink.autoplay.start();
   });
-  const pofol = document.querySelectorAll(
-    ".sw-portfolio-thum",
-    "sw-portfolio-txt"
-  );
 
   // portfolio study swiper
   let swStudy = new Swiper(".sw-study-thum", {
     loop: true,
+    slidesPerView: 1,
+
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -89,6 +93,7 @@ $(document).ready(function () {
   // portfolio vue.js swiper
   let swVue = new Swiper(".sw-vue-thum", {
     loop: true,
+    slidesPerView: 1,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -103,6 +108,18 @@ $(document).ready(function () {
   // portfolio team swiper
   let swTeam = new Swiper(".sw-team-thum", {
     loop: true,
+    slidesPerView: 1,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -133,7 +150,7 @@ $(document).ready(function () {
   swWork.controller.control = swWorkLink;
 
   // mbti & possible chart
-  const labels = ["책임감", "팀워크", "끈기", "전문성"];
+  const labels = ["책임감", "팀워크", "끈기", "전문성", "친화력"];
   const data = {
     labels: labels,
     datasets: [
@@ -143,7 +160,7 @@ $(document).ready(function () {
         title: {
           display: false,
         },
-        data: [95, 100, 100, 95],
+        data: [95, 100, 100, 95, 90],
       },
     ],
   };

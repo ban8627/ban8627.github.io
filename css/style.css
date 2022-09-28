@@ -17,9 +17,17 @@
 }
 
 @font-face {
-  font-family: "JSongMyung-Regular-KO";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2")
+  font-family: "MICEGothic Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2")
     format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ImcreSoojin";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -50,7 +58,7 @@ html {
 }
 
 body {
-  font-family: "Pretendard-Regular", Helvetica, "맑은 고딕", "malgun gothic",
+  font-family: "MICEGothic Bold", Helvetica, "맑은 고딕", "malgun gothic",
     "Apple SD Gothic Neo", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -536,7 +544,7 @@ body::-webkit-scrollbar-track {
 }
 
 .visual-txt .desc {
-  font-family: "JSongMyung-Regular-KO";
+  font-family: "MICEGothic Bold";
   font-size: 35px;
   font-weight: 600;
 }
@@ -584,7 +592,7 @@ body::-webkit-scrollbar-track {
 
 .profile .desc b {
   font-size: 26px;
-  font-family: "JSongMyung-Regular-KO";
+  font-family: "ImcreSoojin";
   margin: 0 15px;
 }
 
@@ -720,11 +728,13 @@ body::-webkit-scrollbar-track {
 .pf-category {
   font-size: 24px;
   font-weight: 600;
+  margin-left: 20px;
 }
 
 .pf-txt-wrap .txt-wrap {
   position: relative;
   width: 450px;
+  margin: 0 auto;
   height: 550px;
   background-color: #444;
   padding: 10px;
@@ -749,6 +759,25 @@ body::-webkit-scrollbar-track {
 .pf-quick a:hover {
   font-weight: 600;
   border-bottom: 2px solid #fff;
+}
+.sw-port-control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  z-index: 99;
+}
+
+.sw-port-control button {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 /* pf-mid */
@@ -1105,7 +1134,7 @@ body::-webkit-scrollbar-track {
 }
 
 .mbti-txt .desc {
-  font-family: "JSongMyung-Regular-KO";
+  font-family: "ImcreSoojin";
   font-size: 24px;
 }
 
@@ -1140,12 +1169,12 @@ body::-webkit-scrollbar-track {
 }
 
 .mbti-wrap li {
-  height: calc(100% / 4);
+  height: calc(100% / 5);
   padding: 15px 20px;
 }
 
 .mbti-wrap li span {
-  font-family: "JSongMyung-Regular-KO";
+  font-family: "ImcreSoojin";
   font-size: 20px;
   font-weight: 700;
   color: #333;
@@ -1240,7 +1269,7 @@ body::-webkit-scrollbar-track {
 }
 
 .contact-list li a {
-  font-family: "establishRetrosansOTF";
+  font-family: "ImcreSoojin";
   position: relative;
   width: 100%;
   font-size: 26px;
@@ -1534,9 +1563,6 @@ body::-webkit-scrollbar-track {
     top: 30%;
   }
 
-  .profile .profile-txt {
-  }
-
   .profile .title {
     font-size: 32px;
   }
@@ -1670,8 +1696,6 @@ body::-webkit-scrollbar-track {
   }
 
   /* pf-b */
-  .pf-bottom {
-  }
 
   .career {
     height: 100%;
@@ -1716,7 +1740,7 @@ body::-webkit-scrollbar-track {
   }
 
   .mbti-txt .desc {
-    font-family: "Song Myung", serif;
+    font-family: "ImcreSoojin";
     padding: 20px;
     font-size: 18px;
   }
