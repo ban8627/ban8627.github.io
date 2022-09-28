@@ -105,12 +105,15 @@ body::-webkit-scrollbar-track {
 /* gotop */
 .go-top {
   position: fixed;
-  right: 3%;
+  right: -3%;
   bottom: 3%;
   display: block;
   z-index: 99999;
+  transition: all 0.4s;
 }
-
+.go-top.active {
+  right: 3%;
+}
 .go-top button {
   display: block;
   width: 50px;
@@ -131,19 +134,21 @@ body::-webkit-scrollbar-track {
 /* quick-bt */
 .quick-wrap {
   position: fixed;
-  right: 0;
+  right: -280px;
   top: 80%;
   transform: translate(-50%, -50%);
   display: block;
+  width: 200px;
   z-index: 9999;
   transition: all 0.3s;
-  visibility: hidden;
 }
 
-.quick-wrap.hide {
-  visibility: visible;
+.quick-wrap.active {
+  right: -180px;
 }
-
+.quick-wrap:hover {
+  right: -180px;
+}
 .quick-wrap > ul {
   display: block;
   width: 100%;
@@ -379,7 +384,7 @@ body::-webkit-scrollbar-track {
 
 .side-menu-dim {
   position: fixed;
-  left: 100%;
+  left: 100;
   top: 0;
   display: none;
   width: 100%;
@@ -402,17 +407,22 @@ body::-webkit-scrollbar-track {
 }
 
 .side-title {
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: space-between;
+  align-self: center;
   position: relative;
   width: 100%;
   height: 80px;
   font-size: 32px;
-  line-height: 80px;
-  padding: 10px 5px;
+  padding: 25px 20px;
   border-bottom: 4px double rgba(0, 0, 0, 0.08);
 }
 
 .side-title .close {
-  margin-left: 30px;
+  display: block;
+  width: 30px;
+  height: 30px;
 }
 
 .side-title .close i {
@@ -1507,13 +1517,26 @@ body::-webkit-scrollbar-track {
 }
 
 @media all and (max-width: 500px) {
+  .go-top {
+    right: 10px;
+    bottom: 10px;
+  }
   .quick-wrap {
     top: 90%;
+    right: 0;
     width: 100%;
     height: 100px;
+    display: none;
     transform: translate(0, 0);
+    transition: all 0.3s;
   }
-
+  .quick-wrap:hover {
+    right: 0;
+  }
+  .quick-wrap.active {
+    right: 0;
+    display: block;
+  }
   .quick-wrap > ul {
     display: flex;
     align-items: center;

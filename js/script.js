@@ -1,15 +1,20 @@
 $(document).ready(function () {
   $("#porfile").waypoint(() => {
-    $(".quick-wrap").toggleClass("hide");
+    $(".quick-wrap").toggleClass("active");
+    $(".go-top").toggleClass("active");
   });
   $("#mbti").waypoint(function () {
-    $(".quick-wrap").toggleClass("hide");
+    $(".quick-wrap").toggleClass("active");
   });
 
   // side - menu
   $(".side-menu").click((event) => {
     event.preventDefault();
-    $(".side-menu-dim").animate({ left: 0, display: "block" }, 800);
+    $(".side-menu-dim").css({ left: 0, display: "block" });
+  });
+  $(".close").click((event) => {
+    event.preventDefault();
+    $(".side-menu-dim").css({ left: 100, display: "none" });
   });
 
   // go-top
@@ -17,7 +22,7 @@ $(document).ready(function () {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "smooth",
+      // behavior: "smooth",
     });
   });
 
