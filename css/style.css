@@ -612,7 +612,7 @@ body::-webkit-scrollbar-track {
   font-size: 100px;
   font-weight: 700;
   line-height: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   transition: all 0.5s;
 }
 
@@ -622,7 +622,7 @@ body::-webkit-scrollbar-track {
 
 .profile .desc {
   background-color: #fff;
-  padding: 50px 0 70px;
+  padding: 40px 0 100px;
   font-size: 20px;
   font-weight: 600;
   line-height: 60px;
