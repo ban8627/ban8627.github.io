@@ -155,17 +155,17 @@ $(document).ready(function () {
   swWork.controller.control = swWorkLink;
 
   // mbti & possible chart
-  const labels = ["책임감", "팀워크", "끈기", "전문성", "친화력"];
+  const labels = ["책임감", "팀워크", "소통능력", "끈기", "전문성", "친화력"];
   const data = {
     labels: labels,
     datasets: [
       {
-        backgroundColor: ["rgb(180, 180, 180,0.7)"],
+        backgroundColor: ["rgb(255, 255, 180,0.3)"],
         borderColor: "rgb(0, 0, 0,0.5)",
         title: {
           display: false,
         },
-        data: [95, 100, 100, 95, 90],
+        data: [9.5, 10.0, 10.0, 10.0, 9.5, 9.0],
       },
     ],
   };
@@ -180,14 +180,16 @@ $(document).ready(function () {
       },
       scale: {
         min: 0,
-        max: 100,
+        max: 10,
         suggestedMin: 0,
-        suggestedMax: 100,
-        stepSize: 4,
-        maxTicksLimit: 10,
+        suggestedMax: 10,
+        stepSize: 3,
+        maxTicksLimit: 5,
+        backgroundColor: "#fff",
         ticks: {
           font: {
             size: 16,
+            color: "#fff",
           },
         },
       },

@@ -30,6 +30,7 @@
     format("woff");
   font-weight: normal;
   font-style: normal;
+  background-color: transparent;
 }
 
 * {
@@ -58,7 +59,7 @@ html {
 }
 
 body {
-  font-family: "MICEGothic Bold", Helvetica, "맑은 고딕", "malgun gothic",
+  font-family: "Pretendard-Regular", Helvetica, "맑은 고딕", "malgun gothic",
     "Apple SD Gothic Neo", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -102,6 +103,9 @@ body::-webkit-scrollbar-track {
 }
 
 /* layout */
+.title {
+  font-family: "establishRetrosansOTF";
+}
 /* gotop */
 .go-top {
   position: fixed;
@@ -263,7 +267,6 @@ body::-webkit-scrollbar-track {
 
 /* header */
 .header {
-  font-family: "establishRetrosansOTF";
   position: fixed;
   left: 0;
   top: 0;
@@ -452,7 +455,6 @@ body::-webkit-scrollbar-track {
 
 /* visual */
 .visual {
-  font-family: "establishRetrosansOTF";
   position: relative;
   display: block;
   width: 100%;
@@ -580,7 +582,6 @@ body::-webkit-scrollbar-track {
 }
 
 .visual-txt .desc {
-  font-family: "MICEGothic Bold";
   font-size: 35px;
   font-weight: 600;
 }
@@ -704,7 +705,6 @@ body::-webkit-scrollbar-track {
 }
 
 .pf-top .title {
-  font-family: "establishRetrosansOTF";
   position: absolute;
   right: 0;
   top: 0;
@@ -1109,6 +1109,9 @@ body::-webkit-scrollbar-track {
   position: relative;
   width: 100%;
   height: 100vh;
+  background-color: #333;
+  margin: 65px 0;
+  padding: 50px 0;
 }
 
 .mbti .inner {
@@ -1121,6 +1124,7 @@ body::-webkit-scrollbar-track {
   align-items: flex-end;
   justify-content: space-around;
   padding: 20px 0;
+  color: #fff;
   -webkit-animation: text-pop-up-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: text-pop-up-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -1183,19 +1187,25 @@ body::-webkit-scrollbar-track {
   font-weight: 700;
 }
 
-.mbti-content {
+.mbti-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
   height: calc(100% - 30%);
 }
-
+.chart-container {
+  position: relative;
+  transition: all 0.5s;
+  width: 30vw;
+  height: 45vh;
+  background-color: #333;
+}
 .mbti-wrap {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 500px);
+  width: 55%;
   height: 400px;
 }
 
@@ -1221,12 +1231,6 @@ body::-webkit-scrollbar-track {
   color: #333;
 }
 
-.poss-contents {
-  transition: all 0.5s;
-  width: 400px;
-  height: 400px;
-}
-
 /* contact */
 .contact {
   position: relative;
@@ -1238,17 +1242,18 @@ body::-webkit-scrollbar-track {
 
 .contact .inner {
   padding: 50px 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .contact .title {
   font-family: "establishRetrosansOTF";
-  position: absolute;
-  left: 0;
-  top: 50%;
+  position: relative;
   font-size: 80px;
   font-weight: 700;
   transition: all 0.5s;
-  transform: rotate(-90deg) translate(20%, -10%);
+  transform: rotate(-90deg);
   -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -1295,49 +1300,40 @@ body::-webkit-scrollbar-track {
 }
 
 .contact-list {
-  display: block;
-  height: 280px;
-  float: right;
-  text-align: right;
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  width: 50vw;
+  height: 240px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .contact-list li {
-  height: calc(100% / 3);
+  width: calc(100% / 3);
+  height: 100%;
 }
 
-.contact-list li i {
+.contact-list li > i {
   display: none;
 }
-
-.contact-list li a {
-  font-family: "ImcreSoojin";
+.contact-list li > a {
   position: relative;
-  width: 100%;
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 3.5em;
-}
-
-.contact-list li a::after {
-  width: 5px;
-  height: 5px;
-  content: "";
   display: block;
-  opacity: 0;
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #000;
+  width: 50%;
+  height: 160px;
+  background-color: rgb(247, 247, 247);
   border-radius: 50%;
-  transition: width 0.3s;
+  box-shadow: 3px 5px 2px rgba(178, 178, 178, 1);
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
 }
-
-.contact-list li:hover a::after {
-  width: 100%;
-  height: 2px;
-  border-radius: 0;
-  opacity: 1;
+.contact-list li > a > i {
+  position: relative;
+  font-size: 60px;
+  line-height: 2.8em;
+  color: rgb(136, 136, 136);
 }
 
 /* footer */
