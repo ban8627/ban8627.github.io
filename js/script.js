@@ -160,8 +160,8 @@ $(document).ready(function () {
     labels: labels,
     datasets: [
       {
-        backgroundColor: ["rgb(255, 255, 180,0.3)"],
-        borderColor: "rgb(0, 0, 0,0.5)",
+        backgroundColor: ["rgb(30 , 30, 30,0.3)"],
+        borderColor: "rgb(0, 0, 0,0.05)",
         title: {
           display: false,
         },
