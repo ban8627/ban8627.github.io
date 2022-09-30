@@ -1119,7 +1119,7 @@ body::-webkit-scrollbar-track {
 .mbti-txt {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px 0;
   -webkit-animation: text-pop-up-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
@@ -1162,7 +1162,7 @@ body::-webkit-scrollbar-track {
 
 .mbti-txt .title {
   font-family: "establishRetrosansOTF";
-  font-size: 70px;
+  font-size: 55px;
   font-weight: 700;
   transition: all 0.5s;
 }
@@ -1175,10 +1175,11 @@ body::-webkit-scrollbar-track {
 .mbti-txt .desc {
   font-family: "ImcreSoojin";
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .mbti-txt .desc > span {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -1192,23 +1193,24 @@ body::-webkit-scrollbar-track {
 
 .mbti-wrap {
   position: relative;
-  display: block;
-  width: 600px;
-  height: 600px;
-  background-color: #e7e7e7;
-  border-radius: 15px;
-  box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 500px);
+  height: 400px;
 }
 
 .mbti-wrap ul {
   position: relative;
   display: block;
-  width: 100%;
+  width: 45%;
   height: 100%;
+  background-color: #e7e7e7;
+  border-radius: 15px;
+  box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
 }
 
 .mbti-wrap li {
-  height: calc(100% / 5);
+  height: calc(100% / 3);
   padding: 15px 20px;
 }
 
@@ -1221,8 +1223,8 @@ body::-webkit-scrollbar-track {
 
 .poss-contents {
   transition: all 0.5s;
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
 }
 
 /* contact */
