@@ -627,7 +627,7 @@ body::-webkit-scrollbar-track {
   font-size: 20px;
   font-weight: 600;
   line-height: 60px;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 80% 1%, 100% 20%, 80% 100%, 0% 100%);
 }
 
 .profile .desc b {
@@ -647,25 +647,25 @@ body::-webkit-scrollbar-track {
   position: absolute;
   display: block;
   width: 1000px;
-  height: 360px;
+  height: 400px;
   overflow: hidden;
   filter: grayscale(100%);
 }
 
 .pi-top {
-  top: 240px;
+  top: 0px;
   right: -300px;
   margin-bottom: 20px;
-  background: #000 url("../images/backgum.jpg") no-repeat;
-  background-position: top right;
+  background: #000 url("../images/KakaoTalk_20220915_101812389.jpg") no-repeat;
+  background-position: center;
   background-size: 80%;
 }
 
 .pi-bottom {
-  top: 620px;
+  top: 480px;
   right: 0;
-  background: #000 url("../images/doong.jpg") no-repeat;
-  background-position: left center;
+  background: #000 url("../images/sample.jpg") no-repeat;
+  background-position: center;
   background-size: 80%;
 }
 
