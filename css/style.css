@@ -1066,7 +1066,7 @@ body::-webkit-scrollbar-track {
   margin: 10px auto;
   width: 95%;
   height: 100%;
-  color: rgb(36, 36, 36);
+  color: rgb(75, 75, 75);
 }
 
 .box-content > li > span {
