@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap");
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -17,20 +17,11 @@
 }
 
 @font-face {
-  font-family: "MICEGothic Bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2")
-    format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ImcreSoojin";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff")
+  font-family: "ROKABold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.1/ROKABold.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
-  background-color: transparent;
 }
 
 * {
@@ -579,6 +570,7 @@ body::-webkit-scrollbar-track {
   font-size: 65px;
   font-weight: 700;
   margin-bottom: 20px;
+  font-family: "Reem Kufi Ink", sans-serif;
 }
 
 .visual-txt .desc {
@@ -1111,6 +1103,7 @@ body::-webkit-scrollbar-track {
   background-color: #333;
   margin: 65px 0;
   padding: 50px 0;
+  font-family: "ROKABold";
 }
 
 .mbti .inner {
@@ -1180,8 +1173,7 @@ body::-webkit-scrollbar-track {
 }
 
 .mbti-txt .desc > span {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 22px;
 }
 
 .mbti-container {
@@ -1222,8 +1214,7 @@ body::-webkit-scrollbar-track {
 }
 
 .mbti-wrap li span {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
   color: #333;
 }
 
