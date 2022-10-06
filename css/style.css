@@ -861,9 +861,9 @@ body::-webkit-scrollbar-track {
 }
 
 .content-wrap {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding: 5px 5px;
+
   height: calc(100% - 20%);
   background-color: #e7e7e7;
   overflow: hidden;
@@ -872,9 +872,13 @@ body::-webkit-scrollbar-track {
 .content-wrap li {
   width: 98%;
   height: 98%;
+  padding: 5px 5px;
   margin: 0 auto;
 }
-
+.content-wrap li > a {
+  display: block;
+  width: 100%;
+}
 .content-wrap li img {
   width: 100%;
   transition: all 0.5s;
@@ -982,6 +986,36 @@ body::-webkit-scrollbar-track {
 }
 .sw-work-thum .sw-work-pagination .swiper-pagination-progressbar-fill {
   background-color: #444;
+}
+.work-desc-thum {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+.work-desc-thum:hover {
+  background-color: #000;
+}
+
+.work-desc-thum span {
+  display: block;
+  color: rgb(214, 214, 214);
+  font-size: 16px;
+  font-weight: 400;
+}
+.work-desc-thum:hover span {
+  color: #fff;
+  font-size: 20px;
+}
+.work-desc {
+  display: flex;
+  justify-content: space-between;
+}
+.work-desc li {
+  font-size: 20px;
+  font-weight: 600;
 }
 /* career */
 .career {

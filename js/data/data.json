@@ -1,0 +1,584 @@
+CodeData = {
+  "all":[
+    {
+      "title": "거제청년센터 이룸",
+      "category": "Study Coding & Vue.js",
+      "desc": "거제청년센터 이룸 클론코딩 & Vue.js",
+      "origin": "https://geojeyouth.com/web/",
+      "work": "https://ban8627.github.io/geojeyouth/",
+      "github": "https://github.com/ban8627/geojeyouth.git",
+      "vuegit": "https://github.com/ban8627/vue-geojeyouth.git",
+      "vuepage": "https://ban8627.github.io/page-geojeyouth/",
+      "thum": "images/geoje.png"
+    },
+    {
+      "title": "STX Const",
+      "category": "Study Coding & Vue.js",
+      "desc": "STX 건설 클론코딩 & Vue.js",
+      "origin": "http://www.stxconst.co.kr/",
+      "work": "https://ban8627.github.io/stxconst/",
+      "github": "https://github.com/ban8627/stxconst.git",
+      "vuegit": "https://github.com/ban8627/vue-stx.git",
+      "vuepage": "https://ban8627.github.io/page-stx/",
+      "thum": "images/stxconst.png"
+    },
+    {
+      "title": "마시그래이",
+      "category": "Study Coding & Vue.js",
+      "desc": "마시그래이 클론코딩 & Vue.js",
+      "origin": "https://www.masigray.com:5021/main/main.asp",
+      "work": "https://ban8627.github.io/masigray/",
+      "github": "https://github.com/ban8627/masigray.git",
+      "vuegit": "https://github.com/ban8627/Vue-Masigray.git",
+      "vuepage": "https://ban8627.github.io/page-Masigray/",
+      "thum": "images/masigray.png"
+    },
+    {
+      "title": "노엘로힐스",
+      "category": "Study Coding & Vue.js",
+      "desc": "노엘로힐스 클론코딩 & Vue.js",
+      "origin": "https://noelohills.com/",
+      "work": "https://ban8627.github.io/noelohills/",
+      "github": "https://github.com/ban8627/noelohills.git",
+      "vuegit": "https://github.com/ban8627/vue-noelohills.git",
+      "vuepage": "https://ban8627.github.io/page-noelo/",
+      "thum": "images/noelo.png"
+    },
+    {
+      "title": "K-water",
+      "category": "Study Coding & Vue.js",
+      "desc": "K-water 클론코딩 & Vue.js",
+      "origin": "https://geojeyouth.com/web/",
+      "work": "https://ban8627.github.io/k-warter/",
+      "github": "https://github.com/ban8627/k-warter.git",
+      "vuegit": "https://github.com/ban8627/vue-geojeyouth.git",
+      "vuepage": "https://ban8627.github.io/page-geojeyouth/",
+      "thum": "images/kwater.png"
+    },
+    {
+      "title": "정육각",
+      "category": "Personal Coding & Vue.js",
+      "desc": "정육각 클론코딩 & Vue.js",
+      "origin": "https://www.jeongyookgak.com/index",
+      "work": "https://ban8627.github.io/jeongyookgak/",
+      "github": "https://github.com/ban8627/jeongyookgak.git",
+      "vuegit": "https://github.com/ban8627/vue-geojeyouth.git",
+      "vuepage": "https://ban8627.github.io/page-geojeyouth/",
+      "thum": "images/jeongyookgak.png"
+    },
+    {
+      "title": "우성사료",
+      "category": "Personal Coding & Vue.js",
+      "desc": "우성사료 클론코딩 & Vue.js",
+      "origin": "http://www.woosungfeed.co.kr/",
+      "work": "https://ban8627.github.io/WoosungFeed/",
+      "github": "https://github.com/ban8627/WoosungFeed.git",
+      "vuegit": "#",
+      "vuepage": "#",
+      "thum": "images/Woosungfeed.png"
+    },
+    {
+      "title": "PNC Tech",
+      "category": "Personal Coding & Vue.js",
+      "desc": "피앤씨테크 클론코딩 & Vue.js",
+      "origin": "https://www.pnctech.com/main.pnc",
+      "work": "https://ban8627.github.io/pnctech/",
+      "github": "https://github.com/ban8627/pnctech.git",
+      "vuegit": "#",
+      "vuepage": "#",
+      "thum": "images/pnctect.png"
+    },
+    {
+      "title": "더굿나잇",
+      "category": "Personal Coding & Vue.js",
+      "desc": "더굿나잇 클론코딩",
+      "origin": "https://thegoodnight.daegu.go.kr/kr/",
+      "work": "https://ban8627.github.io/thegoodnight/",
+      "github": "https://github.com/ban8627/thegoodnight.git",
+      "vuegit": "https://github.com/ban8627/vue-thegoodnights.git",
+      "vuepage": "#",
+      "thum": "images/pnctect.png"
+    },
+    {
+      "title": "지브리",
+      "category": "Vue.js",
+      "desc": "지브리-API 활용",
+      "origin": "",
+      "work": "",
+      "github": "",
+      "vuegit": "https://github.com/ban8627/vue-ghibli.git",
+      "vuepage": "https://ban8627.github.io/page-ghibli/",
+      "thum": "images/ghibli.png"
+    },
+    {
+      "title": "Todo List",
+      "category": "Vue.js",
+      "desc": "Todo List-vue",
+      "origin": "",
+      "work": "",
+      "github": "",
+      "vuegit": "https://github.com/ban8627/MiNi_Blog.git",
+      "vuepage": "https://ban8627.github.io/page-miniblog/",
+      "thum": "#"
+    },
+    {
+      "title": "portfolio",
+      "category": "Personal Coding & Vue.js",
+      "desc": "K-water 클론코딩 & Vue.js",
+      "origin": "https://ban8627.github.io/",
+      "work": "https://ban8627.github.io/",
+      "github": "https://github.com/ban8627/ban8627.github.io.git",
+      "vuegit": "#",
+      "vuepage": "#",
+      "thum": "#"
+    },
+    {
+      "title": "대박소스",
+      "category": "Work Coding",
+      "desc": "대박소스 쇼핑몰 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "1 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "대박소스 홈페이지 퍼블리싱( 한글 / 영문 Ver)",
+      "thum": "images/pnctect.png"
+    },
+    {
+      "title": "기웅코퍼레이션 주식회사",
+      "category": "Work Coding",
+      "desc": "기웅코퍼레이션 주식회사 홈페이지 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "1 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "기웅코퍼레이션 주식회사 홈페이지 퍼블리싱( 메인페이지 + 서브페이지 5장 )",
+      "thum": ""
+    },
+    {
+      "title": "디에이치인더스트리",
+      "category": "Work Coding",
+      "desc": "디에이치인더스트리 홈페이지 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "1 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "디에이치인더스트리 홈페이지 퍼블리싱( 메인페이지 + 서브페이지 11장 )",
+      "thum": ""
+    },
+    {
+      "title": "비스트로피자",
+      "category": "Work Coding",
+      "desc": "비스트로피자 홈페이지 유지보수",
+      "role": "유지보수 전담",
+      "date": "3 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "비스트로피자 홈페이지 유지보수",
+      "thum": ""
+    },
+    {
+      "title": "법무법인 한경",
+      "category": "Work Coding",
+      "desc": "법무법인 한경 홈페이지 퍼블리싱 & 유지보수",
+      "role": "퍼블리싱 & 유지보수 전담",
+      "date": "1 년",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "법무법인 한경 홈페이지 퍼블리싱(서브 8장) & 유지보수",
+      "thum": ""
+    },
+    {
+      "title": "바른 S&F",
+      "category": "Work Coding",
+      "desc": "바른 S&F 쇼핑몰 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "3 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "바른 S&F 쇼핑몰 퍼블리싱",
+      "thum": ""
+    },
+    {
+      "title": "블루스카이(마스크)",
+      "category": "Work Coding",
+      "desc": "블루스카이(마스크) 홈페이지 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "1 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "블루스카이(마스크) 홈페이지 퍼블리싱(메인 + 서브 8장)",
+      "thum": ""
+    },
+    {
+      "title": "지산골가마솥국밥",
+      "category": "Work Coding",
+      "desc": "지산골가마솥국밥 홈페이지 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "1 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "지산골가마솥국밥 홈페이지 퍼블리싱(메인1장)",
+      "thum": ""
+    }
+  ],
+  "study": [
+    {
+      "title": "거제청년센터 이룸",
+      "category": "Study Coding & Vue.js",
+      "desc": "거제청년센터 이룸 클론코딩 & Vue.js",
+      "origin": "https://geojeyouth.com/web/",
+      "work": "https://ban8627.github.io/geojeyouth/",
+      "github": "https://github.com/ban8627/geojeyouth.git",
+      "vuegit": "https://github.com/ban8627/vue-geojeyouth.git",
+      "vuepage": "https://ban8627.github.io/page-geojeyouth/",
+      "thum": "images/geoje.png"
+    },
+    {
+      "title": "STX Const",
+      "category": "Study Coding & Vue.js",
+      "desc": "STX 건설 클론코딩 & Vue.js",
+      "origin": "http://www.stxconst.co.kr/",
+      "work": "https://ban8627.github.io/stxconst/",
+      "github": "https://github.com/ban8627/stxconst.git",
+      "vuegit": "https://github.com/ban8627/vue-stx.git",
+      "vuepage": "https://ban8627.github.io/page-stx/",
+      "thum": "images/stxconst.png"
+    },
+    {
+      "title": "마시그래이",
+      "category": "Study Coding & Vue.js",
+      "desc": "마시그래이 클론코딩 & Vue.js",
+      "origin": "https://www.masigray.com:5021/main/main.asp",
+      "work": "https://ban8627.github.io/masigray/",
+      "github": "https://github.com/ban8627/masigray.git",
+      "vuegit": "https://github.com/ban8627/Vue-Masigray.git",
+      "vuepage": "https://ban8627.github.io/page-Masigray/",
+      "thum": "images/masigray.png"
+    },
+    {
+      "title": "노엘로힐스",
+      "category": "Study Coding & Vue.js",
+      "desc": "노엘로힐스 클론코딩 & Vue.js",
+      "origin": "https://noelohills.com/",
+      "work": "https://ban8627.github.io/noelohills/",
+      "github": "https://github.com/ban8627/noelohills.git",
+      "vuegit": "https://github.com/ban8627/vue-noelohills.git",
+      "vuepage": "https://ban8627.github.io/page-noelo/",
+      "thum": "images/noelo.png"
+    },
+    {
+      "title": "K-water",
+      "category": "Study Coding & Vue.js",
+      "desc": "K-water 클론코딩 & Vue.js",
+      "origin": "https://geojeyouth.com/web/",
+      "work": "https://ban8627.github.io/k-warter/",
+      "github": "https://github.com/ban8627/k-warter.git",
+      "vuegit": "https://github.com/ban8627/vue-geojeyouth.git",
+      "vuepage": "https://ban8627.github.io/page-geojeyouth/",
+      "thum": "images/kwater.png"
+    }
+  ],
+  "vue": [
+    {
+      "title": "거제청년센터 이룸",
+      "category": "Study Coding & Vue.js",
+      "desc": "거제청년센터 이룸 클론코딩 & Vue.js",
+      "origin": "https://geojeyouth.com/web/",
+      "work": "https://ban8627.github.io/geojeyouth/",
+      "github": "https://github.com/ban8627/geojeyouth.git",
+      "vuegit": "https://github.com/ban8627/vue-geojeyouth.git",
+      "vuepage": "https://ban8627.github.io/page-geojeyouth/",
+      "thum": "images/geoje.png"
+    },
+    {
+      "title": "STX Const",
+      "category": "Study Coding & Vue.js",
+      "desc": "STX 건설 클론코딩 & Vue.js",
+      "origin": "http://www.stxconst.co.kr/",
+      "work": "https://ban8627.github.io/stxconst/",
+      "github": "https://github.com/ban8627/stxconst.git",
+      "vuegit": "https://github.com/ban8627/vue-stx.git",
+      "vuepage": "https://ban8627.github.io/page-stx/",
+      "thum": "images/stxconst.png"
+    },
+    {
+      "title": "마시그래이",
+      "category": "Study Coding & Vue.js",
+      "desc": "마시그래이 클론코딩 & Vue.js",
+      "origin": "https://www.masigray.com:5021/main/main.asp",
+      "work": "https://ban8627.github.io/masigray/",
+      "github": "https://github.com/ban8627/masigray.git",
+      "vuegit": "https://github.com/ban8627/Vue-Masigray.git",
+      "vuepage": "https://ban8627.github.io/page-Masigray/",
+      "thum": "images/masigray.png"
+    },
+    {
+      "title": "노엘로힐스",
+      "category": "Study Coding & Vue.js",
+      "desc": "노엘로힐스 클론코딩 & Vue.js",
+      "origin": "https://noelohills.com/",
+      "work": "https://ban8627.github.io/noelohills/",
+      "github": "https://github.com/ban8627/noelohills.git",
+      "vuegit": "https://github.com/ban8627/vue-noelohills.git",
+      "vuepage": "https://ban8627.github.io/page-noelo/",
+      "thum": "images/noelo.png"
+    },
+    {
+      "title": "K-water",
+      "category": "Study Coding & Vue.js",
+      "desc": "K-water 클론코딩 & Vue.js",
+      "origin": "https://geojeyouth.com/web/",
+      "work": "https://ban8627.github.io/k-warter/",
+      "github": "https://github.com/ban8627/k-warter.git",
+      "vuegit": "https://github.com/ban8627/vue-geojeyouth.git",
+      "vuepage": "https://ban8627.github.io/page-geojeyouth/",
+      "thum": "images/kwater.png"
+    },
+    {
+      "title": "정육각",
+      "category": "Personal Coding & Vue.js",
+      "desc": "정육각 클론코딩 & Vue.js",
+      "origin": "https://www.jeongyookgak.com/index",
+      "work": "https://ban8627.github.io/jeongyookgak/",
+      "github": "https://github.com/ban8627/jeongyookgak.git",
+      "vuegit": "https://github.com/ban8627/vue-geojeyouth.git",
+      "vuepage": "https://ban8627.github.io/page-geojeyouth/",
+      "thum": "images/jeongyookgak.png"
+    },
+    {
+      "title": "우성사료",
+      "category": "Personal Coding & Vue.js",
+      "desc": "우성사료 클론코딩 & Vue.js",
+      "origin": "http://www.woosungfeed.co.kr/",
+      "work": "https://ban8627.github.io/WoosungFeed/",
+      "github": "https://github.com/ban8627/WoosungFeed.git",
+      "vuegit": "#",
+      "vuepage": "#",
+      "thum": "images/Woosungfeed.png"
+    },
+    {
+      "title": "PNC Tech",
+      "category": "Personal Coding & Vue.js",
+      "desc": "피앤씨테크 클론코딩 & Vue.js",
+      "origin": "https://www.pnctech.com/main.pnc",
+      "work": "https://ban8627.github.io/pnctech/",
+      "github": "https://github.com/ban8627/pnctech.git",
+      "vuegit": "#",
+      "vuepage": "#",
+      "thum": "images/pnctect.png"
+    },
+    {
+      "title": "더굿나잇",
+      "category": "Personal Coding & Vue.js",
+      "desc": "더굿나잇 클론코딩",
+      "origin": "https://thegoodnight.daegu.go.kr/kr/",
+      "work": "https://ban8627.github.io/thegoodnight/",
+      "github": "https://github.com/ban8627/thegoodnight.git",
+      "vuegit": "https://github.com/ban8627/vue-thegoodnights.git",
+      "vuepage": "#",
+      "thum": "images/pnctect.png"
+    },
+    {
+      "title": "지브리",
+      "category": "Vue.js",
+      "desc": "지브리-API 활용",
+      "origin": "",
+      "work": "",
+      "github": "",
+      "vuegit": "https://github.com/ban8627/vue-ghibli.git",
+      "vuepage": "https://ban8627.github.io/page-ghibli/",
+      "thum": "images/ghibli.png"
+    },
+    {
+      "title": "Todo List",
+      "category": "Vue.js",
+      "desc": "Todo List-vue",
+      "origin": "",
+      "work": "",
+      "github": "",
+      "vuegit": "https://github.com/ban8627/MiNi_Blog.git",
+      "vuepage": "https://ban8627.github.io/page-miniblog/",
+      "thum": "#"
+    },
+    {
+      "title": "portfolio",
+      "category": "Personal Coding & Vue.js",
+      "desc": "K-water 클론코딩 & Vue.js",
+      "origin": "https://ban8627.github.io/",
+      "work": "https://ban8627.github.io/",
+      "github": "https://github.com/ban8627/ban8627.github.io.git",
+      "vuegit": "#",
+      "vuepage": "#",
+      "thum": "#"
+    }
+  ],
+  "personal": [
+    {
+      "title": "코레일",
+      "category": "Team Coding & Vue.js",
+      "desc": "코레일 클론코딩",
+      "origin": "https://info.korail.com/info/index.do",
+      "work": "https://qwertymi.github.io/korail/",
+      "github": "https://github.com/qwertymi/korail.git",
+      "vuegit": "",
+      "vuepage": "",
+      "thum": "images/korail.png"
+    },
+    {
+      "title": "정육각",
+      "category": "Personal Coding & Vue.js",
+      "desc": "정육각 클론코딩 & Vue.js",
+      "origin": "https://www.jeongyookgak.com/index",
+      "work": "https://ban8627.github.io/jeongyookgak/",
+      "github": "https://github.com/ban8627/jeongyookgak.git",
+      "vuegit": "https://github.com/ban8627/vue-geojeyouth.git",
+      "vuepage": "https://ban8627.github.io/page-geojeyouth/",
+      "thum": "images/jeongyookgak.png"
+    },
+    {
+      "title": "우성사료",
+      "category": "Personal Coding & Vue.js",
+      "desc": "우성사료 클론코딩 & Vue.js",
+      "origin": "http://www.woosungfeed.co.kr/",
+      "work": "https://ban8627.github.io/WoosungFeed/",
+      "github": "https://github.com/ban8627/WoosungFeed.git",
+      "vuegit": "#",
+      "vuepage": "#",
+      "thum": "images/Woosungfeed.png"
+    },
+    {
+      "title": "PNC Tech",
+      "category": "Personal Coding & Vue.js",
+      "desc": "피앤씨테크 클론코딩 & Vue.js",
+      "origin": "https://www.pnctech.com/main.pnc",
+      "work": "https://ban8627.github.io/pnctech/",
+      "github": "https://github.com/ban8627/pnctech.git",
+      "vuegit": "#",
+      "vuepage": "#",
+      "thum": "images/pnctect.png"
+    },
+    {
+      "title": "더굿나잇",
+      "category": "Personal Coding & Vue.js",
+      "desc": "더굿나잇 클론코딩 ",
+      "origin": "https://thegoodnight.daegu.go.kr/kr/",
+      "work": "https://ban8627.github.io/thegoodnight/",
+      "github": "https://github.com/ban8627/thegoodnight.git",
+      "vuegit": "https://github.com/ban8627/vue-thegoodnights.git",
+      "vuepage": "#",
+      "thum": "images/pnctect.png"
+    },
+    {
+      "title": "더굿나잇",
+      "category": "Personal Coding & Vue.js",
+      "desc": "더굿나잇 클론코딩 ",
+      "origin": "https://thegoodnight.daegu.go.kr/kr/",
+      "work": "https://ban8627.github.io/thegoodnight/",
+      "github": "https://github.com/ban8627/thegoodnight.git",
+      "vuegit": "https://github.com/ban8627/vue-thegoodnights.git",
+      "vuepage": "#",
+      "thum": "images/pnctect.png"
+    },
+    {
+      "title": "portfolio",
+      "category": "Personal Coding & Vue.js",
+      "desc": "K-water 클론코딩 & Vue.js",
+      "origin": "https://ban8627.github.io/",
+      "work": "https://ban8627.github.io/",
+      "github": "https://github.com/ban8627/ban8627.github.io.git",
+      "vuegit": "#",
+      "vuepage": "#",
+      "thum": "#"
+    }
+  ],
+  "work": [
+    {
+      "title": "대박소스",
+      "category": "Work Coding",
+      "desc": "대박소스 쇼핑몰 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "1 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "대박소스 홈페이지 퍼블리싱( 한글 / 영문 Ver)",
+      "thum": "images/pnctect.png"
+    },
+    {
+      "title": "기웅코퍼레이션 주식회사",
+      "category": "Work Coding",
+      "desc": "기웅코퍼레이션 주식회사 홈페이지 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "1 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "기웅코퍼레이션 주식회사 홈페이지 퍼블리싱( 메인페이지 + 서브페이지 5장 )",
+      "thum": ""
+    },
+    {
+      "title": "디에이치인더스트리",
+      "category": "Work Coding",
+      "desc": "디에이치인더스트리 홈페이지 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "1 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "디에이치인더스트리 홈페이지 퍼블리싱( 메인페이지 + 서브페이지 11장 )",
+      "thum": ""
+    },
+    {
+      "title": "비스트로피자",
+      "category": "Work Coding",
+      "desc": "비스트로피자 홈페이지 유지보수",
+      "role": "유지보수 전담",
+      "date": "3 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "비스트로피자 홈페이지 유지보수",
+      "thum": ""
+    },
+    {
+      "title": "법무법인 한경",
+      "category": "Work Coding",
+      "desc": "법무법인 한경 홈페이지 퍼블리싱 & 유지보수",
+      "role": "퍼블리싱 & 유지보수 전담",
+      "date": "1 년",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "법무법인 한경 홈페이지 퍼블리싱(서브 8장) & 유지보수",
+      "thum": ""
+    },
+    {
+      "title": "바른 S&F",
+      "category": "Work Coding",
+      "desc": "바른 S&F 쇼핑몰 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "3 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "바른 S&F 쇼핑몰 퍼블리싱",
+      "thum": ""
+    },
+    {
+      "title": "블루스카이(마스크)",
+      "category": "Work Coding",
+      "desc": "블루스카이(마스크) 홈페이지 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "1 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "블루스카이(마스크) 홈페이지 퍼블리싱(메인 + 서브 8장)",
+      "thum": ""
+    },
+    {
+      "title": "지산골가마솥국밥",
+      "category": "Work Coding",
+      "desc": "지산골가마솥국밥 홈페이지 퍼블리싱",
+      "role": "퍼블리싱 전담",
+      "date": "1 개월",
+      "skill": "HTML5, CSS3, JavaScript, jQuery",
+      "company": "(주)아이디어콩",
+      "text": "지산골가마솥국밥 홈페이지 퍼블리싱(메인1장)",
+      "thum": ""
+    }
+  ]
+}
