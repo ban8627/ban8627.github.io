@@ -1,10 +1,29 @@
 $(document).ready(function () {
+  let showLoading = () => {
+    $("#loading").fadeIn(800);
+    $("html").css("overflowY", "hidden");
+  };
+  showLoading();
+
+  $(window).load(function () {
+    //페이지가 로드 되면 로딩 화면을 없애주는 것
+    let hideLoading = () => {
+      $("#loading").fadeOut(800);
+      $("html").css("overflowY", "auto");
+    };
+    setTimeout(function () {
+      hideLoading();
+    }, 500);
+  });
+
   const codeData = JSON.parse(JSON.stringify(CodeData));
   const allCode = codeData.all;
   const studyCode = codeData.study;
   const vueCode = codeData.vue;
   const personCode = codeData.personal;
   const workCode = codeData.work;
+
+  // header show & hide
 
   // side - menu
   $(".side-menu").click((event) => {
@@ -35,11 +54,17 @@ $(document).ready(function () {
   let allSwiperThum = $(".sw-portfolio-thum > .swiper-wrapper");
   for (let i = 0; i < allCode.length; i++) {
     let thumList = allCode[i];
+    if (thumList.thum == "") {
+      thumList.thum = "사진없음";
+    } else {
+      thumList.thum;
+    }
     let itemTemp = `<div class="swiper-slide">
                     <a href="${thumList.work}">
                       <img src="${thumList.thum}" alt="" />
                     </a>
                   </div>`;
+
     thumlist += itemTemp;
   }
   allSwiperThum.html(thumlist);
@@ -78,28 +103,11 @@ $(document).ready(function () {
   allSwiperTxt.html(txtlist);
   // portfolio all swiper
   let allPFthum = new Swiper(".sw-portfolio-thum", {
-    effect: "cube",
-    grabCursor: true,
     touchRatio: 0,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 20,
-      shadowScale: 0.94,
-    },
-
     loop: true,
   });
   let allPFLink = new Swiper(".sw-portfolio-txt", {
     loop: true,
-    effect: "cube",
-    grabCursor: true,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 0,
-      shadowScale: 0,
-    },
     pagination: {
       el: ".sw-porfol-pagi",
     },

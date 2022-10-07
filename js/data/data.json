@@ -119,7 +119,7 @@ CodeData = {
       "github": "",
       "vuegit": "https://github.com/ban8627/MiNi_Blog.git",
       "vuepage": "https://ban8627.github.io/page-miniblog/",
-      "thum": "#"
+      "thum": "images/nothum.png"
     },
     {
       "title": "portfolio",
@@ -130,7 +130,7 @@ CodeData = {
       "github": "https://github.com/ban8627/ban8627.github.io.git",
       "vuegit": "#",
       "vuepage": "#",
-      "thum": "#"
+      "thum": "images/nothum.png"
     },
     {
       "title": "대박소스",
@@ -141,7 +141,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "대박소스 홈페이지 퍼블리싱( 한글 / 영문 Ver)",
-      "thum": "images/pnctect.png"
+      "thum": "images/daebaksauce.png"
     },
     {
       "title": "기웅코퍼레이션 주식회사",
@@ -152,7 +152,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "기웅코퍼레이션 주식회사 홈페이지 퍼블리싱( 메인페이지 + 서브페이지 5장 )",
-      "thum": ""
+      "thum": "images/nothum.png"
     },
     {
       "title": "디에이치인더스트리",
@@ -163,7 +163,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "디에이치인더스트리 홈페이지 퍼블리싱( 메인페이지 + 서브페이지 11장 )",
-      "thum": ""
+      "thum": "images/dhindustry.png"
     },
     {
       "title": "비스트로피자",
@@ -174,7 +174,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "비스트로피자 홈페이지 유지보수",
-      "thum": ""
+      "thum": "images/bistropizza.png"
     },
     {
       "title": "법무법인 한경",
@@ -185,7 +185,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "법무법인 한경 홈페이지 퍼블리싱(서브 8장) & 유지보수",
-      "thum": ""
+      "thum": "images/nothum.png"
     },
     {
       "title": "바른 S&F",
@@ -196,7 +196,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "바른 S&F 쇼핑몰 퍼블리싱",
-      "thum": ""
+      "thum": "images/barunsf.png"
     },
     {
       "title": "블루스카이(마스크)",
@@ -207,7 +207,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "블루스카이(마스크) 홈페이지 퍼블리싱(메인 + 서브 8장)",
-      "thum": ""
+      "thum": "images/nothum.png"
     },
     {
       "title": "지산골가마솥국밥",
@@ -218,7 +218,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "지산골가마솥국밥 홈페이지 퍼블리싱(메인1장)",
-      "thum": ""
+      "thum": "images/nothum.png"
     }
   ],
   "study": [
@@ -398,7 +398,7 @@ CodeData = {
       "github": "",
       "vuegit": "https://github.com/ban8627/MiNi_Blog.git",
       "vuepage": "https://ban8627.github.io/page-miniblog/",
-      "thum": "#"
+      "thum": "images/nothum.png"
     },
     {
       "title": "portfolio",
@@ -409,7 +409,7 @@ CodeData = {
       "github": "https://github.com/ban8627/ban8627.github.io.git",
       "vuegit": "#",
       "vuepage": "#",
-      "thum": "#"
+      "thum": "images/nothum.png"
     }
   ],
   "personal": [
@@ -466,7 +466,7 @@ CodeData = {
       "github": "https://github.com/ban8627/thegoodnight.git",
       "vuegit": "https://github.com/ban8627/vue-thegoodnights.git",
       "vuepage": "#",
-      "thum": "images/pnctect.png"
+      "thum": "images/nothum.png"
     },
     {
       "title": "더굿나잇",
@@ -477,7 +477,7 @@ CodeData = {
       "github": "https://github.com/ban8627/thegoodnight.git",
       "vuegit": "https://github.com/ban8627/vue-thegoodnights.git",
       "vuepage": "#",
-      "thum": "images/pnctect.png"
+      "thum": "images/nothum.png"
     },
     {
       "title": "portfolio",
@@ -488,7 +488,7 @@ CodeData = {
       "github": "https://github.com/ban8627/ban8627.github.io.git",
       "vuegit": "#",
       "vuepage": "#",
-      "thum": "#"
+      "thum": "images/nothum.png"
     }
   ],
   "work": [
@@ -501,7 +501,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "대박소스 홈페이지 퍼블리싱( 한글 / 영문 Ver)",
-      "thum": "images/pnctect.png"
+      "thum": "images/daebaksauce.png"
     },
     {
       "title": "기웅코퍼레이션 주식회사",
@@ -512,7 +512,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "기웅코퍼레이션 주식회사 홈페이지 퍼블리싱( 메인페이지 + 서브페이지 5장 )",
-      "thum": ""
+      "thum": "images/nothum.png"
     },
     {
       "title": "디에이치인더스트리",
@@ -523,7 +523,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "디에이치인더스트리 홈페이지 퍼블리싱( 메인페이지 + 서브페이지 11장 )",
-      "thum": ""
+      "thum": "images/dhindustry.png"
     },
     {
       "title": "비스트로피자",
@@ -534,7 +534,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "비스트로피자 홈페이지 유지보수",
-      "thum": ""
+      "thum": "images/bistropizza.png"
     },
     {
       "title": "법무법인 한경",
@@ -545,7 +545,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "법무법인 한경 홈페이지 퍼블리싱(서브 8장) & 유지보수",
-      "thum": ""
+      "thum": "images/nothum.png"
     },
     {
       "title": "바른 S&F",
@@ -556,7 +556,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "바른 S&F 쇼핑몰 퍼블리싱",
-      "thum": ""
+      "thum": "images/barunsf.png"
     },
     {
       "title": "블루스카이(마스크)",
@@ -567,7 +567,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "블루스카이(마스크) 홈페이지 퍼블리싱(메인 + 서브 8장)",
-      "thum": ""
+      "thum": "images/nothum.png"
     },
     {
       "title": "지산골가마솥국밥",
@@ -578,7 +578,7 @@ CodeData = {
       "skill": "HTML5, CSS3, JavaScript, jQuery",
       "company": "(주)아이디어콩",
       "text": "지산골가마솥국밥 홈페이지 퍼블리싱(메인1장)",
-      "thum": ""
+      "thum": "images/nothum.png"
     }
   ]
 }
