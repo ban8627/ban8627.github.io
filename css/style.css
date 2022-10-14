@@ -1097,14 +1097,7 @@ body::-webkit-scrollbar-track {
   color: #fff;
   font-size: 20px;
 }
-.work-desc {
-  display: flex;
-  justify-content: space-between;
-}
-.work-desc li {
-  font-size: 20px;
-  font-weight: 600;
-}
+
 /* career */
 .career {
   position: relative;
@@ -1250,7 +1243,6 @@ body::-webkit-scrollbar-track {
     transform: translateX(0);
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    text-shadow: none;
   }
 
   100% {
@@ -1267,7 +1259,6 @@ body::-webkit-scrollbar-track {
     transform: translateX(0);
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    text-shadow: none;
   }
 
   100% {
@@ -1422,9 +1413,6 @@ body::-webkit-scrollbar-track {
   height: 100%;
 }
 
-.contact-list li > i {
-  display: none;
-}
 .contact-list li > a {
   position: relative;
   display: block;
@@ -1442,15 +1430,18 @@ body::-webkit-scrollbar-track {
 }
 .contact-list li > a > i {
   position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   font-size: 60px;
   line-height: 2.8em;
   color: rgb(86, 86, 86);
 }
+.contact-list li > a > i.m-bt {
+  display: none;
+}
 .contact-list li > a:hover i {
-  color:#fff;
+  color: #fff;
 }
 /* footer */
 .footer {
@@ -1933,11 +1924,50 @@ body::-webkit-scrollbar-track {
     font-size: 16px;
   }
 
+  .pf-content {
+    width: 100%;
+  }
+  .pf-img-wrap {
+    height: 70%;
+  }
+  .pf-txt-wrap {
+    height: calc((100% - 70%) -20px);
+    margin-top: 20px;
+  }
+  .pf-txt-wrap .txt-wrap {
+    height: 200px;
+  }
+  .sw-portfolio-thum {
+    padding: 0;
+  }
+  .sw-port-control {
+    display: none;
+  }
+  .pf-mid {
+    padding: 10px;
+  }
+  .pf-mid .inner {
+    padding: 0;
+  }
+  .pf-content-m > div {
+    height: 50%;
+  }
+  .content-wrap {
+    height: 80%;
+  }
+  .content-txt {
+    top: 80%;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  }
   .career {
     height: 100%;
-    padding: 30px 0;
+    padding: 10px;
   }
-
+  .career .inner {
+    padding: 0;
+  }
   .career .title {
     top: 40%;
     font-size: 30px;
@@ -1950,9 +1980,18 @@ body::-webkit-scrollbar-track {
   .career .title span {
     font-size: 20x;
   }
+  .career .inner > .content-box {
+    padding: 10px;
+  }
+  .career .content-box > div {
+    background-color: #f1f1f1;
+    box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
+    width: 48%;
+  }
 
   .mbti {
     height: 100%;
+    margin: 20px 0;
   }
 
   .mbti .inner {
@@ -1979,7 +2018,19 @@ body::-webkit-scrollbar-track {
     padding: 20px;
     font-size: 18px;
   }
-
+  .mbti-content {
+    display: none;
+  }
+  .mbti-wrap {
+    width: 100%;
+  }
+  .mbti-wrap li {
+    font-family: "Pretendard-Regular";
+    font-size: 14px;
+  }
+  .mbti-wrap li span {
+    font-size: 16px;
+  }
   .poss-contents {
     display: none;
   }
@@ -1989,17 +2040,15 @@ body::-webkit-scrollbar-track {
   }
 
   .contact .inner {
-    padding: 40px 0;
+    padding: 20px;
   }
 
   .contact .title {
     position: relative;
-    left: 0;
-    top: 0;
     display: block;
     animation: none;
     transform: none;
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .contact-list {
@@ -2018,13 +2067,6 @@ body::-webkit-scrollbar-track {
     background-color: rgb(220, 220, 220);
     border-radius: 50%;
   }
-
-  .contact-list li i {
-    display: block;
-    font-size: 30px;
-    line-height: 77px;
-  }
-
   .contact-list li a {
     position: absolute;
     left: 0;
@@ -2032,7 +2074,24 @@ body::-webkit-scrollbar-track {
     display: block;
     width: 100%;
     height: 100%;
-    text-indent: -9999px;
     cursor: pointer;
+    border-radius: 50%;
+  }
+  .contact-list li a > i.p-bt {
+    display: none;
+  }
+  .contact-list li > a > i.m-bt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    line-height: 0;
+    color: rgb(86, 86, 86);
+    z-index: 999;
+  }
+  .contact-list li > a:hover i {
+    color: #fff;
   }
 }

@@ -6,7 +6,6 @@ $(document).ready(function () {
   showLoading();
 
   $(window).load(function () {
-    //페이지가 로드 되면 로딩 화면을 없애주는 것
     let hideLoading = () => {
       $("#loading").fadeOut(800);
       $("html").css("overflowY", "auto");
@@ -51,57 +50,34 @@ $(document).ready(function () {
 
   // swiper-code-list-all
   let thumlist = "";
-  let allSwiperThum = $(".sw-portfolio-thum > .swiper-wrapper");
-  for (let i = 0; i < allCode.length; i++) {
-    let thumList = allCode[i];
-    if (thumList.thum == "") {
-      thumList.thum = "사진없음";
-    } else {
-      thumList.thum;
-    }
-    let itemTemp = `<div class="swiper-slide">
-                    <a href="${thumList.work}">
-                      <img src="${thumList.thum}" alt="" />
-                    </a>
-                  </div>`;
-
-    thumlist += itemTemp;
-  }
-  allSwiperThum.html(thumlist);
   let txtlist = "";
+  let allSwiperThum = $(".sw-portfolio-thum > .swiper-wrapper");
   let allSwiperTxt = $(".sw-portfolio-txt > .swiper-wrapper");
-  for (let i = 0; i < allCode.length; i++) {
-    let txtList = allCode[i];
-    let itemTemp = `<li class="swiper-slide">
-                    <span class="pf-category study vue">${txtList.category}</span>
+  allCode.forEach((obj) => {
+    let thumTemp = `<div class="swiper-slide">
+                    <a href="${obj.work}" target="_blank"><img src="${obj.thum}" alt="" /></a>
+                  </div>`;
+    thumlist += thumTemp;
+    allSwiperThum.html(thumlist);
+    let txtTemp = `<li class="swiper-slide">
+                    <span class="pf-category study vue">${obj.category}</span>
                     <div class="txt-wrap">
-                      <h3 class="sub-title">${txtList.title}</h3>
-                      <p class="sub-desc">${txtList.desc}</p>
+                      <h3 class="sub-title">${obj.title}</h3>
+                      <p class="sub-desc">${obj.desc}</p>
                       <h4 class="fix-el"></h4>
                       <p class="fix-desc"></p>
                       <ul class="pf-quick">
-                        <li>
-                          <a href="${txtList.origin}">Origin</a>
-                        </li>
-                        <li>
-                          <a href="${txtList.work}">Work</a>
-                        </li>
-                        <li>
-                          <a href="${txtList.github}">GitHub</a>
-                        </li>
-                        <li>
-                          <a href="${txtList.vuegit}">Vue-GitHub</a>
-                        </li>
-                        <li>
-                          <a href="${txtList.vuepage}">Vue-Page</a>
-                        </li>
+                        <li><a href="${obj.origin}" target="_blank">Origin</a></li>
+                        <li><a href="${obj.work}" target="_blank">Work</a></li>
+                        <li><a href="${obj.github}" target="_blank">GitHub</a></li>
+                        <li><a href="${obj.vuegit}" target="_blank">Vue-GitHub</a></li>
+                        <li><a href="${obj.vuepage}" target="_blank">Vue-Page</a></li>
                       </ul>
                     </div>
                   </li>`;
-    txtlist += itemTemp;
-  }
-  allSwiperTxt.html(txtlist);
-  // portfolio all swiper
+    txtlist += txtTemp;
+    allSwiperTxt.html(txtlist);
+  });
   let allPFthum = new Swiper(".sw-portfolio-thum", {
     touchRatio: 0,
     loop: true,
@@ -131,48 +107,33 @@ $(document).ready(function () {
 
   // study-code-list
   let studytxt = "";
-  let studySwiperTxt = $(".sw-study > .swiper-wrapper");
-  for (let i = 0; i < studyCode.length; i++) {
-    let txtList = studyCode[i];
-    let itemTemp = `<div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="${txtList.origin}">Origin</a></li>
-                      <li>
-                        <a href="${txtList.work}">Work</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.github}">GitHub</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.vuegit}">Vue-GitHub</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.vuepage}">Vue-Page</a>
-                      </li>
-                    </ul>
-                  </div>`;
-    studytxt += itemTemp;
-  }
-  studySwiperTxt.html(studytxt);
-
   let studythum = "";
+  let studySwiperTxt = $(".sw-study > .swiper-wrapper");
   let studySwiperthum = $(".sw-study-thum > .swiper-wrapper");
-  for (let i = 0; i < studyCode.length; i++) {
-    let txtList = studyCode[i];
-    let itemTemp = `<li class="swiper-slide">
-                    <a href="${txtList.work}">
-                      <img src="${txtList.thum}" alt="" />
+  studyCode.forEach((obj) => {
+    let thumTemp = `<li class="swiper-slide">
+                    <a href="${obj.work}">
+                      <img src="${obj.thum}" alt="" />
                     </a>
                   </li>`;
-    studythum += itemTemp;
-  }
-  studySwiperthum.html(studythum);
-
+    let txtTemp = `<div class="swiper-slide">
+                    <ul class="pf-quick">
+                      <li><a href="${obj.origin}">Origin</a></li>
+                      <li><a href="${obj.work}">Work</a></li>
+                      <li><a href="${obj.github}">GitHub</a></li>
+                      <li><a href="${obj.vuegit}">Vue-GitHub</a></li>
+                      <li><a href="${obj.vuepage}">Vue-Page</a></li>
+                    </ul>
+                  </div>`;
+    studythum += thumTemp;
+    studytxt += txtTemp;
+    studySwiperthum.html(studythum);
+    studySwiperTxt.html(studytxt);
+  });
   // portfolio study swiper
   let swStudy = new Swiper(".sw-study-thum", {
     loop: true,
     slidesPerView: 1,
-
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -191,45 +152,30 @@ $(document).ready(function () {
   });
 
   // vue-code-list
-  let vueSwiperthum = $(".sw-vue-thum > .swiper-wrapper");
   let vuethum = "";
-  for (let i = 0; i < vueCode.length; i++) {
-    let txtList = vueCode[i];
-    let itemTemp = `<li class="swiper-slide">
-                    <a href="${txtList.work}">
-                      <img src="${txtList.thum}" alt="" />
-                    </a>
-                  </li>`;
-    vuethum += itemTemp;
-  }
-  vueSwiperthum.html(vuethum);
   let vuetxt = "";
+  let vueSwiperthum = $(".sw-vue-thum > .swiper-wrapper");
   let vueSwiperTxt = $(".sw-vueclone > .swiper-wrapper");
-  for (let i = 0; i < vueCode.length; i++) {
-    let txtList = vueCode[i];
-    let itemTemp = `<div class="swiper-slide">
+  vueCode.forEach((obj) => {
+    let txtTemp = `<div class="swiper-slide">
                     <ul class="pf-quick">
-                      <li>
-                        <a href="${txtList.origin}">Origin</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.work}">Work</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.github}">GitHub</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.vuegit}">Vue-GitHub</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.vuepage}">Vue-Page</a>
-                      </li>
+                      <li><a href="${obj.origin}">Origin</a></li>
+                      <li><a href="${obj.work}">Work</a></li>
+                      <li><a href="${obj.github}">GitHub</a></li>
+                      <li><a href="${obj.vuegit}">Vue-GitHub</a></li>
+                      <li><a href="${obj.vuepage}">Vue-Page</a></li>
                     </ul>
                   </div>`;
-    vuetxt += itemTemp;
-  }
-  vueSwiperTxt.html(vuetxt);
-
+    let thumTemp = `<li class="swiper-slide">
+                    <a href="${obj.work}">
+                      <img src="${obj.thum}" alt="" />
+                    </a>
+                  </li>`;
+    vuethum += thumTemp;
+    vuetxt += txtTemp;
+    vueSwiperTxt.html(vuetxt);
+    vueSwiperthum.html(vuethum);
+  });
   // portfolio vue.js swiper
   let swVue = new Swiper(".sw-vue-thum", {
     loop: true,
