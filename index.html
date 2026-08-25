@@ -2,459 +2,281 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon-180x180.png" />
-    <link rel="icon" type="image/png" href="images/android-icon-192x192.png" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
     <title>류지섭 포트폴리오</title>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
-    />
-
     <meta
       name="description"
-      content="프론트엔드 개발자 류지섭 포트폴리오입니다."
+      content="웹 퍼블리싱과 프론트엔드 개발 경험을 바탕으로 사용자 중심의 웹 서비스를 구현하는 류지섭의 포트폴리오입니다."
     />
-    <meta name="keywords" content="프론트엔드, 퍼블리셔, 개발자 포트폴리오" />
+    <meta name="keywords" content="류지섭, 포트폴리오, 프론트엔드, 웹 퍼블리셔, JavaScript, Vue" />
     <meta name="author" content="류지섭" />
-    <meta property="og:title" content="프론트엔드 개발자 류지섭 포트폴리오" />
-    <meta
-      property="og:site_name"
-      content="프론트엔드 개발자 류지섭 포트폴리오"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="ban8627.github.io" />
-    <meta property="og:image" content="ban8627.github.io" />
+    <meta property="og:title" content="류지섭 포트폴리오" />
     <meta
       property="og:description"
-      content="프론트엔드 개발자 류지섭 포트폴리오입니다."
+      content="웹 퍼블리싱과 프론트엔드 개발 프로젝트를 정리한 포트폴리오입니다."
     />
-
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ban8627.github.io/" />
+    <meta property="og:image" content="https://ban8627.github.io/images/Color%20logo%20-%20no%20background.png" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-180x180.png" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
-      integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
-    <script src="js/swiper/swiper.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <!-- chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Progressbar 관련 -->
-    <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
-      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/data/data.json" type="text/javascript"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
   </head>
 
   <body>
-    <div class="ring-dim" id="loading">
-      <div class="ring">
-        <span></span>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#hero" aria-label="류지섭 포트폴리오 홈">
+          <img src="images/Color logo - no background.png" alt="" />
+          <span>JS RYU</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="주요 메뉴">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#career">Career</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="text-link" href="https://github.com/ban8627" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button button-small" href="#contact">Contact</a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="메뉴 열기"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="go-top">
-      <button><i class="fas fa-arrow-up"></i></button>
-    </div>
-    <div class="quick-wrap">
-      <ul>
-        <li class="quick-contact">
-          <a href="#"><i class="fas fa-id-card"></i></a>
-          <ul class="con-list">
-            <li>
-              <a href="mailto:ban8627@gmail.com"
-                ><i class="fas fa-paper-plane"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://open.kakao.com/o/sBqhyEDe" target="_blank"
-                ><i class="fas fa-comments"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/ban8627/ban8627.git" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="./file/류지섭_포트폴리오.pdf" target="_blank"
-            ><i class="fas fa-file-pdf"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
-    <div class="wrap">
-      <header class="header">
-        <div class="inner">
-          <a href="#" class="logo">류지섭 포트폴리오 사이트</a>
-          <ul class="gnb">
-            <li><a href="index.html">Intro</a></li>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#mbti">MBTI</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="side-menu">
-            <a href="#">
-              <div></div>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴" aria-hidden="true">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#career">Career</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/ban8627" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Frontend Developer · Web Publisher</p>
+            <h1>화면을 이해하고, 흐름을 정리해 구현하는 개발자 류지섭입니다.</h1>
+            <p class="hero-description">
+              웹 퍼블리셔로 시작해 JavaScript와 Vue 기반 프로젝트를 만들며 프론트엔드 개발자로
+              성장해 왔습니다. 사용자가 빠르게 이해할 수 있는 UI와 유지보수 가능한 마크업 구조를
+              함께 고민합니다.
+            </p>
+            <div class="hero-tags" aria-label="주요 기술">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Vue</span>
+              <span>GitHub</span>
+            </div>
+            <div class="hero-actions">
+              <a class="button" href="#projects">View Projects</a>
+              <a class="button button-secondary" href="https://github.com/ban8627" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="프로필 요약">
+            <img src="images/KakaoTalk_20220915_101812389.jpg" alt="류지섭 프로필 사진" />
+            <div>
+              <p class="hero-card-label">Focus</p>
+              <strong>퍼블리싱 경험을 기반으로 한 프론트엔드 구현</strong>
+              <p>웹 접근성, 반응형 레이아웃, 프로젝트 구조화, 사용자 흐름 개선에 관심이 있습니다.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container section-grid">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>퍼블리싱의 디테일과 개발의 구조를 함께 봅니다.</h2>
+          </div>
+          <div class="about-content">
+            <p>
+              사회복지사로 일하며 프로그램 운영 중 코딩을 접했고, 코드에 따라 화면이 구현되는 과정에
+              매력을 느껴 웹 퍼블리셔로 전환했습니다. 이후 3년간 홈페이지 개발과 유지보수를 경험하며
+              실제 서비스 운영에서 필요한 꼼꼼함을 익혔습니다.
+            </p>
+            <p>
+              프론트엔드 개발자 양성과정을 통해 JavaScript와 Vue를 학습했고, 여러 클론 코딩과 개인
+              프로젝트를 통해 컴포넌트 기반 UI와 페이지 구조를 반복적으로 구현했습니다.
+            </p>
+            <div class="strength-grid">
+              <article>
+                <h3>책임감</h3>
+                <p>주어진 작업을 끝내는 데서 멈추지 않고 더 효율적인 구현 방식을 찾습니다.</p>
+              </article>
+              <article>
+                <h3>팀워크</h3>
+                <p>피드백을 수용하고 협업자가 이해하기 쉬운 구조와 커뮤니케이션을 지향합니다.</p>
+              </article>
+              <article>
+                <h3>끈기</h3>
+                <p>막히는 지점이 있어도 원인을 좁혀가며 문제를 해결하는 방식을 선호합니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Skills</p>
+            <h2>실제 프로젝트에서 사용한 기술 중심으로 정리했습니다.</h2>
+          </div>
+          <div class="skill-grid">
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <ul>
+                <li><strong>HTML / CSS</strong><span>시맨틱 마크업, 반응형 레이아웃, 웹 퍼블리싱</span></li>
+                <li><strong>JavaScript</strong><span>DOM 제어, 인터랙션, 프로젝트 데이터 렌더링</span></li>
+                <li><strong>Vue</strong><span>학습 및 개인 프로젝트 기반 UI 구현</span></li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Publishing</h3>
+              <ul>
+                <li><strong>Responsive UI</strong><span>데스크톱, 태블릿, 모바일 대응</span></li>
+                <li><strong>Maintenance</strong><span>홈페이지 유지보수와 운영 이슈 대응</span></li>
+                <li><strong>Accessibility</strong><span>버튼, 링크, 포커스, heading 구조 점검</span></li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Tools</h3>
+              <ul>
+                <li><strong>Git / GitHub</strong><span>프로젝트 버전 관리와 GitHub Pages 배포</span></li>
+                <li><strong>VS Code</strong><span>정적 웹 프로젝트 개발 환경</span></li>
+                <li><strong>Design Tools</strong><span>포토샵, 일러스트레이터 기반 웹디자인 과정 수료</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="container">
+          <div class="section-heading project-heading">
+            <div>
+              <p class="eyebrow">Projects</p>
+              <h2>주요 프로젝트</h2>
+            </div>
+            <p>
+              공개 GitHub 저장소와 기존 포트폴리오 데이터를 기준으로 정리했습니다. 학습 클론과 개인
+              Vue 프로젝트는 중요도를 구분해 표시합니다.
+            </p>
+          </div>
+
+          <div class="featured-grid" id="featured-projects" aria-live="polite"></div>
+
+          <div class="subsection-title">
+            <h3>Other Projects</h3>
+            <p>웹 퍼블리싱, 클론 코딩, Vue 학습 프로젝트</p>
+          </div>
+          <div class="project-grid" id="other-projects" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section career" id="career">
+        <div class="container section-grid">
+          <div class="section-heading">
+            <p class="eyebrow">Career</p>
+            <h2>운영 경험을 바탕으로 구현 품질을 높입니다.</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-card">
+              <span class="period">2019.03 - 2022.04</span>
+              <h3>(주)아이디어콩</h3>
+              <p class="role">웹 퍼블리셔 / 홈페이지 개발 및 유지보수</p>
+              <ul>
+                <li>홈페이지 퍼블리싱 및 유지보수</li>
+                <li>쇼핑몰, 기업 홈페이지 등 다양한 웹 화면 구현</li>
+                <li>HTML, CSS, JavaScript, jQuery 기반 업무 수행</li>
+              </ul>
+            </article>
+            <article class="timeline-card">
+              <span class="period">2016.07 - 2018.02</span>
+              <h3>(사)경상북도장애인재활협회</h3>
+              <p class="role">사회복지 프로그램 운영</p>
+              <ul>
+                <li>장애인 전담 보조 프로그램 운영</li>
+                <li>사회복지 프로그램 개발 및 운영 경험</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education" id="education">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Education</p>
+            <h2>학습 이력</h2>
+          </div>
+          <div class="education-grid">
+            <article>
+              <h3>그린컴퓨터아트학원</h3>
+              <p>스마트혼합-뷰 활용 프론트엔드 개발자 양성과정 · 2022.05 - 2022.10</p>
+            </article>
+            <article>
+              <h3>한국IT교육원</h3>
+              <p>웹디자인 기능사 과정 · 포토샵 / 일러스트레이터 / 퍼블리싱 · 2018.06 - 2018.12</p>
+            </article>
+            <article>
+              <h3>계명대학교</h3>
+              <p>사회복지학과 · 2009.03 - 2016.02</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-panel">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>프로젝트와 개발 이야기를 나눌 준비가 되어 있습니다.</h2>
+            <p>웹 퍼블리싱, 프론트엔드 구현, 프로젝트 협업 관련 연락은 아래 채널을 이용해 주세요.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="button" href="mailto:ban8627@gmail.com">Email</a>
+            <a class="button button-secondary" href="https://github.com/ban8627" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a class="button button-secondary" href="./file/류지섭_포트폴리오.pdf" target="_blank" rel="noreferrer">
+              PDF Portfolio
             </a>
           </div>
-          <div class="side-menu-dim">
-            <div class="side-menu-wrap">
-              <h3 class="side-title">
-                <span>FE.Dev 류지섭</span>
-                <a href="#" class="close">
-                  <i class="fas fa-times"></i>
-                </a>
-              </h3>
+        </div>
+      </section>
+    </main>
 
-              <ul class="side-menu-list">
-                <li><a href="index.html">Intro</a></li>
-                <li><a href="#porfile">Profile</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#career">Career</a></li>
-                <li><a href="#mbti">MBTI</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section class="visual" id="visual">
-        <div class="inner">
-          <div class="visual-bg">
-            <div class="visual-img"></div>
-          </div>
-          <div class="visual-txt">
-            <h2 class="title">FrontEnd Developer</h2>
-            <p class="desc">
-              3년차 퍼블리셔에서<br />
-              프론트엔드 개발자로 성장중인<br />류지섭 입니다.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="profile" id="porfile">
-        <div class="inner">
-          <div class="profile-txt" data-aos="fade-up-right">
-            <h2 class="title">ID.<span>Jiseop</span></h2>
-            <p class="desc">
-              <b>퍼블리셔에서 프론트엔드 개발자로...</b><br />
-              저의 시작은 <b>사회복지사</b> 였습니다.<br />
-              프로그램 운영중 코딩을 접하고 코드에 따라 구현되는 화면에
-              반하여<br />
-              사회복지사의 길을 접고 수업을 통해 웹퍼블리셔가 되었습니다. <br />
-              웹퍼블리셔로서 3년이란 시간을 보냈지만 <b>성장</b>하는 개발자가
-              되고자<br />
-              프론트엔드 과정을 수강하여 관련 지식을 쌓았습니다.<br />
-              이에 저는 고객의 편리를 추구하며 회사에 도움이 되는<br />
-              프론트엔드 개발자가 되고자 합니다.
-            </p>
-          </div>
-          <div class="profile-img">
-            <div
-              class="pi-top"
-              data-aos="fade-up-left"
-              data-aos-duration="1000"
-            ></div>
-            <div
-              class="pi-bottom"
-              data-aos="fade-up-left"
-              data-aos-duration="1500"
-            ></div>
-          </div>
-        </div>
-      </section>
-      <section class="portfolio" id="portfolio">
-        <div class="pf-top">
-          <div class="inner">
-            <h2 class="title">Portfolio</h2>
-            <div class="pf-content">
-              <div
-                class="pf-img-wrap"
-                data-aos="fade-up-right"
-                data-aos-duration="1000"
-              >
-                <div class="swiper-container sw-portfolio-thum">
-                  <div class="swiper-wrapper"></div>
-                  <div class="swiper-pagi-box">
-                    <div class="sw-porfol-pagi"></div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="pf-txt-wrap"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <div class="swiper-container sw-portfolio-txt">
-                  <ul class="swiper-wrapper"></ul>
-                  <div class="sw-port-control">
-                    <button class="sw-port-prev">
-                      <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="sw-port-next">
-                      <i class="fas fa-chevron-right"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="pf-mid">
-          <div class="inner">
-            <div class="pf-content-m">
-              <div
-                class="pf-content-l"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >
-                <div class="content-txt swiper-container sw-study">
-                  <h3 class="sub-title">Study Clone List</h3>
-                  <div class="swiper-wrapper"></div>
-                </div>
-                <div class="content-wrap swiper-container sw-study-thum">
-                  <ul class="swiper-wrapper"></ul>
-                </div>
-              </div>
-              <div
-                class="pf-content-r"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                <div class="content-wrap swiper-container sw-vue-thum">
-                  <ul class="swiper-wrapper"></ul>
-                </div>
-                <div class="content-txt swiper-container sw-vueclone">
-                  <h3 class="sub-title">Vue.js Clone List</h3>
-                  <div class="swiper-wrapper"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h2 class="title"><i>Portfolio</i></h2>
-        </div>
-        <div class="pf-bottom">
-          <div class="inner">
-            <div class="pf-content-m">
-              <div
-                class="pf-content-l"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <div class="content-txt swiper-container sw-team-clone">
-                  <h3 class="sub-title">Personal & Team Clone List</h3>
-                  <div class="swiper-wrapper"></div>
-                </div>
-                <div class="content-wrap swiper-container sw-team-thum">
-                  <ul class="swiper-wrapper"></ul>
-                </div>
-              </div>
-              <div
-                class="pf-content-r"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                <div class="content-wrap swiper-container sw-work-thum">
-                  <ul class="swiper-wrapper"></ul>
-                  <span class="sw-work-pagination"></span>
-                </div>
-                <div class="content-txt swiper-container sw-work-clone">
-                  <h3 class="sub-title">Work List</h3>
-                  <div class="swiper-wrapper"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="career" id="career">
-        <div class="inner">
-          <h2 class="title">
-            <strong>C</strong>areer <span>&#38;</span><br />
-            <strong>E</strong>xperience
-          </h2>
-          <div class="content-box">
-            <div class="career-box">
-              <h3 class="sub-title">Career</h3>
-              <ul class="box-content">
-                <li>
-                  <span>(주)아이디어콩</span>
-                  <ul>
-                    <li>근속기간 : 19.03 ~ 22.04</li>
-                    <li>
-                      주요업무 : 홈페이지 개발 &#38; 유지보수 외 기타 업무
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <span>(사)경상북도장애인재활협회</span>
-                  <ul>
-                    <li>근속기간 : 16.07 ~ 18.2</li>
-                    <li>
-                      주요업무 : 장애인전담 보조 프로그램 운영 & 사회복지
-                      프로그램 개발 등
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="exper-box">
-              <h3 class="sub-title">Edu <span>&#38;</span> Exp</h3>
-              <ul class="box-content">
-                <li>
-                  <span>그린컴퓨터아트학원</span>
-                  <ul>
-                    <li>스마트혼합-뷰 활용 프론트엔드 개발자 양성과정</li>
-                    <li>수강기간 : 22.05 ~ 22.10</li>
-                    <li>주요내용 : 뷰 활용 등</li>
-                  </ul>
-                </li>
-                <li>
-                  <span>한국IT교육원</span>
-                  <ul>
-                    <li>웹디자인 기능사</li>
-                    <li>수강기간 : 18.06 ~ 18.12</li>
-                    <li>주요내용 : 포토샵 / 일러스트레이터 & 퍼블리싱 과정</li>
-                  </ul>
-                </li>
-                <li>
-                  <span>계명대학교</span>
-                  <ul>
-                    <li>사회복지학과</li>
-                    <li>기간 : 09.03 ~ 16.02</li>
-                    <li>사회복지 전공 / 공모전 동아리(벗바리)장</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="mbti" id="mbti">
-        <div class="inner">
-          <div class="mbti-txt">
-            <h2 class="title">MBTI <span>&</span><br />Possibility</h2>
-            <p class="desc">
-              <span>ISTP</span>는 무엇을 만드는데 타고난 재능을 가지고
-              있습니다.<br />
-              완성이 되면 또 다른 과제로 옮겨 다니며 새로운 기술을 하나하나
-              터득해 나가는 유형입니다.
-            </p>
-          </div>
-          <div class="mbti-container">
-            <div class="mbti-content chart-container">
-              <canvas id="myChart"></canvas>
-            </div>
-            <div class="mbti-wrap">
-              <ul>
-                <li>
-                  <span>책임감</span>
-                  <br />주어진 일을 완성시키는 것에서 멈추지 않고<br />
-                  조금 더 효율적인 코드가 없는지 확인하기 위해 노력합니다.
-                </li>
-                <li>
-                  <span>팀워크</span>
-                  <br />소통하는 개발자로서 피드백을 수용하는<br />
-                  개발자가 되고자 합니다.
-                </li>
-                <li>
-                  <span>소통능력</span>
-                  <br />친절과 배려를 우선으로 상대방을 대하며
-                  <br />
-                  상대가 말하려는 속뜻을 캐치하려고 노력합니다.
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <span>끈기</span>
-                  <br />막힘에도 주저앉지 않고 <br />
-                  여러 수단과 방법을 통해 문제를 해결하고자 노력합니다.
-                </li>
-                <li>
-                  <span>전문성</span>
-                  <br />퍼블리셔로서 3년의 기간동안 작업을 하였으며, <br />
-                  프론트엔드개발자로서 교육을 통해 기초를 다졌습니다.
-                </li>
-                <li>
-                  <span>친화력</span>
-                  <br />내향적인 성격으로 인하여 첫만남은 어색하다 느낄 수
-                  있지만
-                  <br />
-                  관계를 형성하면 존중과 신뢰로 오랜 관계를 유지 할 수 있습니다.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact" id="contact">
-        <div class="inner">
-          <h2 class="title">Contact</h2>
-          <ul class="contact-list">
-            <li>
-              <a href="mailto:ban8627@gmail.com" target="_blank">
-                <i class="fas fa-paper-plane p-bt"></i>
-                <i class="fas fa-paper-plane m-bt"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://open.kakao.com/o/sBqhyEDe" target="_blank">
-                <i class="far fa-comments p-bt"></i>
-                <i class="far fa-comments m-bt"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/ban8627/ban8627.git" target="_blank">
-                <i class="fab fa-github p-bt"></i>
-                <i class="fab fa-github m-bt"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="inner">
-          <p class="copy">
-            CopyRight &copy; 2022 Design by JS RYUAll Rights Reserved.
-          </p>
-        </div>
-      </footer>
-    </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="current-year">2026</span> 류지섭. All rights reserved.</p>
+        <p>Built with HTML, CSS and JavaScript.</p>
+      </div>
+    </footer>
   </body>
 </html>
