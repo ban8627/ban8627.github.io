@@ -1,383 +1,194 @@
-$(document).ready(function () {
-  let showLoading = () => {
-    $("#loading").fadeIn(800);
-    $("html").css("overflowY", "hidden");
+const featuredProjects = [
+  {
+    title: "vue-upbit-ranking",
+    category: "Vue Project",
+    description:
+      "공개 GitHub 저장소로 확인된 Vue 기반 개인 프로젝트입니다. 데이터 표시와 사용자 화면 구성을 연습한 프로젝트로 Featured에 배치했습니다.",
+    stack: ["Vue", "JavaScript"],
+    image: "images/nothum.png",
+    github: "https://github.com/ban8627/vue-upbit-ranking",
+    demo: "",
+  },
+  {
+    title: "vue-ghibli",
+    category: "API Practice",
+    description:
+      "지브리 API 활용 프로젝트입니다. API 데이터를 화면에 정리하고 Vue 기반 인터페이스로 표현하는 흐름을 학습했습니다.",
+    stack: ["Vue", "API", "JavaScript"],
+    image: "images/ghibli.png",
+    github: "https://github.com/ban8627/vue-ghibli",
+    demo: "https://ban8627.github.io/page-ghibli/",
+  },
+  {
+    title: "ban8627.github.io",
+    category: "Portfolio",
+    description:
+      "개인 포트폴리오 사이트입니다. 정적 HTML, CSS, JavaScript 기반으로 프로젝트와 경력 정보를 구성했습니다.",
+    stack: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    image: "images/Color logo - no background.png",
+    github: "https://github.com/ban8627/ban8627.github.io",
+    demo: "https://ban8627.github.io/",
+  },
+  {
+    title: "vue-noelohills",
+    category: "Vue Clone",
+    description:
+      "노엘로힐스 페이지를 Vue로 재구성한 학습 프로젝트입니다. 기존 퍼블리싱 경험을 컴포넌트 기반 구조로 확장했습니다.",
+    stack: ["Vue", "JavaScript", "HTML", "CSS"],
+    image: "images/noelo.png",
+    github: "https://github.com/ban8627/vue-noelohills",
+    demo: "https://ban8627.github.io/page-noelo/",
+  },
+];
+
+const otherProjects = [
+  {
+    title: "STX Const",
+    category: "Publishing Clone",
+    description: "STX 건설 웹사이트 클론 코딩 및 퍼블리싱 프로젝트입니다.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    image: "images/stxconst.png",
+    github: "https://github.com/ban8627/stxconst",
+    demo: "https://ban8627.github.io/stxconst/",
+  },
+  {
+    title: "K-water",
+    category: "Publishing Clone",
+    description: "K-water 웹사이트 클론 코딩 프로젝트입니다.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    image: "images/kwater.png",
+    github: "https://github.com/ban8627/k-warter",
+    demo: "https://ban8627.github.io/k-warter/",
+  },
+  {
+    title: "정육각",
+    category: "Personal Clone",
+    description: "정육각 웹사이트 클론 코딩 및 Vue 학습으로 확장한 프로젝트입니다.",
+    stack: ["HTML", "CSS", "JavaScript", "Vue"],
+    image: "images/jeongyookgak.png",
+    github: "https://github.com/ban8627/jeongyookgak",
+    demo: "https://ban8627.github.io/jeongyookgak/",
+  },
+  {
+    title: "우성사료",
+    category: "Publishing Clone",
+    description: "우성사료 웹사이트 클론 코딩 프로젝트입니다.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    image: "images/Woosungfeed.png",
+    github: "https://github.com/ban8627/WoosungFeed",
+    demo: "https://ban8627.github.io/WoosungFeed/",
+  },
+  {
+    title: "거제청년센터 이룸",
+    category: "Study Clone",
+    description: "거제청년센터 이룸 웹사이트 클론 코딩 및 Vue 페이지 학습 프로젝트입니다.",
+    stack: ["HTML", "CSS", "JavaScript", "Vue"],
+    image: "images/geoje.png",
+    github: "https://github.com/ban8627/geojeyouth",
+    demo: "https://ban8627.github.io/geojeyouth/",
+  },
+  {
+    title: "코레일",
+    category: "Team Clone",
+    description: "한국철도공사 웹사이트를 기반으로 진행한 팀 클론 코딩 프로젝트입니다.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    image: "images/korail.png",
+    github: "https://github.com/ban8627/korail",
+    demo: "https://qwertymi.github.io/korail/",
+  },
+];
+
+const createProjectCard = (project, featured = false) => {
+  const stack = project.stack.map((item) => `<span>${item}</span>`).join("");
+  const demoLink = project.demo
+    ? `<a href="${project.demo}" target="_blank" rel="noreferrer">Live Demo</a>`
+    : "";
+
+  return `
+    <article class="project-card${featured ? " featured" : ""}">
+      <img src="${project.image}" alt="${project.title} 프로젝트 썸네일" loading="lazy" />
+      <div class="project-body">
+        <div class="card-meta"><span>${project.category}</span></div>
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <div class="project-stack">${stack}</div>
+        <div class="project-links">
+          <a href="${project.github}" target="_blank" rel="noreferrer">GitHub</a>
+          ${demoLink}
+        </div>
+      </div>
+    </article>
+  `;
+};
+
+const renderProjects = () => {
+  const featuredRoot = document.querySelector("#featured-projects");
+  const otherRoot = document.querySelector("#other-projects");
+
+  if (featuredRoot) {
+    featuredRoot.innerHTML = featuredProjects
+      .map((project) => createProjectCard(project, true))
+      .join("");
+  }
+
+  if (otherRoot) {
+    otherRoot.innerHTML = otherProjects.map((project) => createProjectCard(project)).join("");
+  }
+};
+
+const initNavigation = () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector("#mobile-menu");
+
+  if (!toggle || !menu) {
+    return;
+  }
+
+  const closeMenu = () => {
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "메뉴 열기");
+    menu.setAttribute("aria-hidden", "true");
+    menu.classList.remove("active");
   };
-  showLoading();
 
-  $(window).load(function () {
-    let hideLoading = () => {
-      $("#loading").fadeOut(800);
-      $("html").css("overflowY", "auto");
-    };
-    setTimeout(function () {
-      hideLoading();
-    }, 500);
-  });
-
-  const codeData = JSON.parse(JSON.stringify(CodeData));
-  const allCode = codeData.all;
-  const studyCode = codeData.study;
-  const vueCode = codeData.vue;
-  const personCode = codeData.personal;
-  const workCode = codeData.work;
-
-  // header show & hide
-
-  // side - menu
-  $(".side-menu").click((event) => {
-    event.preventDefault();
-    $(".side-menu-dim").css({
-      left: 0,
-      display: "block",
-    });
-  });
-  $(".close").click((event) => {
-    event.preventDefault();
-    $(".side-menu-dim").css({
-      left: 100,
-      display: "none",
-    });
-  });
-  // waypoint
-  $("#porfile").waypoint(() => {
-    $(".quick-wrap").toggleClass("active");
-    $(".go-top").toggleClass("active");
-  });
-  $("#mbti").waypoint(function () {
-    $(".quick-wrap").toggleClass("active");
-  });
-
-  // swiper-code-list-all
-  let thumlist = "";
-  let txtlist = "";
-  let allSwiperThum = $(".sw-portfolio-thum > .swiper-wrapper");
-  let allSwiperTxt = $(".sw-portfolio-txt > .swiper-wrapper");
-  allCode.forEach((obj) => {
-    let thumTemp = `<div class="swiper-slide">
-                    <a href="${obj.work}" target="_blank"><img src="${obj.thum}" alt="" /></a>
-                  </div>`;
-    thumlist += thumTemp;
-    allSwiperThum.html(thumlist);
-    let txtTemp = `<li class="swiper-slide">
-                    <span class="pf-category study vue">${obj.category}</span>
-                    <div class="txt-wrap">
-                      <h3 class="sub-title">${obj.title}</h3>
-                      <p class="sub-desc">${obj.desc}</p>
-                      <h4 class="fix-el"></h4>
-                      <p class="fix-desc"></p>
-                      <ul class="pf-quick">
-                        <li><a href="${obj.origin}" target="_blank">Origin</a></li>
-                        <li><a href="${obj.work}" target="_blank">Work</a></li>
-                        <li><a href="${obj.github}" target="_blank">GitHub</a></li>
-                        <li><a href="${obj.vuegit}" target="_blank">Vue-GitHub</a></li>
-                        <li><a href="${obj.vuepage}" target="_blank">Vue-Page</a></li>
-                      </ul>
-                    </div>
-                  </li>`;
-    txtlist += txtTemp;
-    allSwiperTxt.html(txtlist);
-  });
-  let allPFthum = new Swiper(".sw-portfolio-thum", {
-    touchRatio: 0,
-    loop: true,
-  });
-  let allPFLink = new Swiper(".sw-portfolio-txt", {
-    loop: true,
-    pagination: {
-      el: ".sw-porfol-pagi",
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".sw-port-next",
-      prevEl: ".sw-port-prev",
-    },
-  });
-
-  allPFLink.controller.control = allPFthum;
-  $(".sw-portfolio-txt").mouseenter(() => {
-    allPFLink.autoplay.stop();
-  });
-  $(".sw-portfolio-txt").mouseleave(() => {
-    allPFLink.autoplay.start();
-  });
-
-  // study-code-list
-  let studytxt = "";
-  let studythum = "";
-  let studySwiperTxt = $(".sw-study > .swiper-wrapper");
-  let studySwiperthum = $(".sw-study-thum > .swiper-wrapper");
-  studyCode.forEach((obj) => {
-    let thumTemp = `<li class="swiper-slide">
-                    <a href="${obj.work}">
-                      <img src="${obj.thum}" alt="" />
-                    </a>
-                  </li>`;
-    let txtTemp = `<div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="${obj.origin}">Origin</a></li>
-                      <li><a href="${obj.work}">Work</a></li>
-                      <li><a href="${obj.github}">GitHub</a></li>
-                      <li><a href="${obj.vuegit}">Vue-GitHub</a></li>
-                      <li><a href="${obj.vuepage}">Vue-Page</a></li>
-                    </ul>
-                  </div>`;
-    studythum += thumTemp;
-    studytxt += txtTemp;
-    studySwiperthum.html(studythum);
-    studySwiperTxt.html(studytxt);
-  });
-  // portfolio study swiper
-  let swStudy = new Swiper(".sw-study-thum", {
-    loop: true,
-    slidesPerView: 1,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
-  let swStudyLink = new Swiper(".sw-study", {
-    loop: true,
-    touchRatio: 0,
-  });
-  swStudy.controller.control = swStudyLink;
-  $(".sw-study-thum").mouseenter(() => {
-    swStudy.autoplay.stop();
-  });
-  $(".sw-study-thum").mouseleave(() => {
-    swStudy.autoplay.start();
-  });
-
-  // vue-code-list
-  let vuethum = "";
-  let vuetxt = "";
-  let vueSwiperthum = $(".sw-vue-thum > .swiper-wrapper");
-  let vueSwiperTxt = $(".sw-vueclone > .swiper-wrapper");
-  vueCode.forEach((obj) => {
-    let txtTemp = `<div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li><a href="${obj.origin}">Origin</a></li>
-                      <li><a href="${obj.work}">Work</a></li>
-                      <li><a href="${obj.github}">GitHub</a></li>
-                      <li><a href="${obj.vuegit}">Vue-GitHub</a></li>
-                      <li><a href="${obj.vuepage}">Vue-Page</a></li>
-                    </ul>
-                  </div>`;
-    let thumTemp = `<li class="swiper-slide">
-                    <a href="${obj.work}">
-                      <img src="${obj.thum}" alt="" />
-                    </a>
-                  </li>`;
-    vuethum += thumTemp;
-    vuetxt += txtTemp;
-    vueSwiperTxt.html(vuetxt);
-    vueSwiperthum.html(vuethum);
-  });
-  // portfolio vue.js swiper
-  let swVue = new Swiper(".sw-vue-thum", {
-    loop: true,
-    slidesPerView: 1,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
-  let swVueLink = new Swiper(".sw-vueclone", {
-    loop: true,
-    touchRatio: 0,
-  });
-  swVue.controller.control = swVueLink;
-  $(".sw-vue-thum").mouseenter(() => {
-    swVue.autoplay.stop();
-  });
-  $(".sw-vue-thum").mouseleave(() => {
-    swVue.autoplay.start();
-  });
-
-  // team & personal-code-list
-  let perSwiperthum = $(".sw-team-thum > .swiper-wrapper");
-  let perthum = "";
-  for (let i = 0; i < personCode.length; i++) {
-    let txtList = personCode[i];
-    let itemTemp = `<li class="swiper-slide">
-                    <a href="${txtList.work}">
-                      <img src="${txtList.thum}" alt="" />
-                    </a>
-                  </li>`;
-    perthum += itemTemp;
-  }
-  perSwiperthum.html(perthum);
-  let pertxt = "";
-  let perSwiperTxt = $(".sw-team-clone > .swiper-wrapper");
-  for (let i = 0; i < personCode.length; i++) {
-    let txtList = personCode[i];
-    let itemTemp = `<div class="swiper-slide">
-                    <ul class="pf-quick">
-                      <li>
-                        <a href="${txtList.origin}">Origin</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.work}">Work</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.github}">GitHub</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.vuegit}">Vue-GitHub</a>
-                      </li>
-                      <li>
-                        <a href="${txtList.vuepage}">Vue-Page</a>
-                      </li>
-                    </ul>
-                  </div>`;
-    pertxt += itemTemp;
-  }
-  perSwiperTxt.html(pertxt);
-  // portfolio team&person swiper
-  let swTeam = new Swiper(".sw-team-thum", {
-    loop: true,
-    slidesPerView: 1,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
-  let swTeamLink = new Swiper(".sw-team-clone", {
-    loop: true,
-    touchRatio: 0,
-  });
-  swTeam.controller.control = swTeamLink;
-  $(".sw-team-thum").mouseenter(() => {
-    swTeam.autoplay.stop();
-  });
-  $(".sw-team-thum").mouseleave(() => {
-    swTeam.autoplay.start();
-  });
-
-  // work-code-list
-  let workSwiperthum = $(".sw-work-thum > .swiper-wrapper");
-  let workthum = "";
-  for (let i = 0; i < workCode.length; i++) {
-    let txtList = workCode[i];
-    let itemTemp = `<li class="swiper-slide">
-                    <a href="${txtList.work}">
-                      <img src="${txtList.thum}" alt="" />
-                      <div class="work-desc-thum">
-                        <span>맡은 역할 : ${txtList.role}</span>
-                        <span>작업 기간 : ${txtList.date}</span>
-                        <span>설명 : ${txtList.desc}</span>
-                      </div>
-                    </a>
-                  </li>`;
-    workthum += itemTemp;
-  }
-  workSwiperthum.html(workthum);
-  let worktxt = "";
-  let workSwiperTxt = $(".sw-work-clone > .swiper-wrapper");
-  for (let i = 0; i < workCode.length; i++) {
-    let txtList = workCode[i];
-    let itemTemp = `<div class="swiper-slide">
-                    <ul class="work-desc">
-                      <li class="work-list-title">${txtList.title}</li>
-                      <li class="work-list-company">${txtList.company}</li>
-                    </ul>
-                  </div>`;
-    worktxt += itemTemp;
-  }
-  workSwiperTxt.html(worktxt);
-  // portfolio work swiper
-  let swWork = new Swiper(".sw-work-thum", {
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".sw-work-pagination",
-      type: "progressbar",
-    },
-  });
-  let swWorkLink = new Swiper(".sw-work-clone", {
-    loop: true,
-    touchRatio: 0,
-  });
-  swWork.controller.control = swWorkLink;
-  $(".sw-work-thum").mouseenter(() => {
-    swWork.autoplay.stop();
-  });
-  $(".sw-work-thum").mouseleave(() => {
-    swWork.autoplay.start();
-  });
-
-  // mbti & possible chart
-  const labels = ["책임감", "팀워크", "소통능력", "끈기", "전문성", "친화력"];
-  const data = {
-    labels: labels,
-    datasets: [
-      {
-        backgroundColor: ["rgb(30 , 30, 30,0.3)"],
-        borderColor: "rgb(0, 0, 0,0.05)",
-        title: {
-          display: false,
-        },
-        data: [9.5, 10.0, 10.0, 10.0, 9.5, 9.0],
-      },
-    ],
+  const openMenu = () => {
+    toggle.setAttribute("aria-expanded", "true");
+    toggle.setAttribute("aria-label", "메뉴 닫기");
+    menu.setAttribute("aria-hidden", "false");
+    menu.classList.add("active");
   };
-  const config = {
-    type: "radar",
-    data: data,
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      elements: {
-        pointBorderWidth: 1,
-      },
-      scale: {
-        min: 0,
-        max: 10,
-        suggestedMin: 0,
-        suggestedMax: 10,
-        stepSize: 3,
-        maxTicksLimit: 5,
-        backgroundColor: "#fff",
-        ticks: {
-          font: {
-            size: 16,
-            color: "#fff",
-          },
-        },
-      },
-      plugins: {
-        legend: {
-          display: false,
-        },
-      },
-    },
-  };
-  const myChart = new Chart(document.getElementById("myChart"), config);
-});
 
-window.onload = function () {
-  AOS.init();
-
-  // go-top
-  document.querySelector(".go-top > button").addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      // behavior: "smooth",
-    });
+  toggle.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
 
-  // contact-quick
-  let quickContact = document.querySelector(".quick-contact > a");
-  let conList = document.querySelector(".con-list");
-  quickContact.addEventListener("click", (event) => {
-    event.preventDefault();
-    conList.classList.toggle("active");
+  menu.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
   });
 };
+
+const setCurrentYear = () => {
+  const year = document.querySelector("#current-year");
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderProjects();
+  initNavigation();
+  setCurrentYear();
+});
