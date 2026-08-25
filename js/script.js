@@ -187,8 +187,62 @@ const setCurrentYear = () => {
   }
 };
 
+const initEmailCopy = () => {
+  const copyButton = document.querySelector("#copy-email");
+  const feedback = document.querySelector("#copy-feedback");
+  const email = "ban8627@gmail.com";
+
+  if (!copyButton || !feedback) {
+    return;
+  }
+
+  const setFeedback = (message) => {
+    feedback.textContent = message;
+    window.setTimeout(() => {
+      if (feedback.textContent === message) {
+        feedback.textContent = "";
+      }
+    }, 3000);
+  };
+
+  const copyWithTextarea = () => {
+    const textarea = document.createElement("textarea");
+    textarea.value = email;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.left = "0";
+    textarea.style.top = "0";
+    textarea.style.opacity = "0";
+    document.body.append(textarea);
+    textarea.focus({ preventScroll: true });
+    textarea.select();
+    textarea.setSelectionRange(0, email.length);
+    document.execCommand("copy");
+    textarea.remove();
+  };
+
+  copyButton.addEventListener("click", async () => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        try {
+          await navigator.clipboard.writeText(email);
+        } catch (error) {
+          copyWithTextarea();
+        }
+      } else {
+        copyWithTextarea();
+      }
+
+      setFeedback("이메일 주소가 복사되었습니다.");
+    } catch (error) {
+      setFeedback("복사하지 못했습니다. 이메일 주소를 직접 선택해 주세요.");
+    }
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
   initNavigation();
+  initEmailCopy();
   setCurrentYear();
 });
