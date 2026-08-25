@@ -120,7 +120,7 @@
       <header class="header">
         <div class="inner">
           <a href="#" class="logo">류지섭 포트폴리오 사이트</a>
-          <ul class="gnb">
+          <ul class="gnb" id="global-navigation">
             <li><a href="index.html">Intro</a></li>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -129,28 +129,34 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="side-menu">
-            <a href="#">
+            <button
+              type="button"
+              class="side-menu-button"
+              aria-label="메뉴 열기"
+              aria-controls="mobile-navigation"
+              aria-expanded="false"
+            >
               <div></div>
-            </a>
+            </button>
           </div>
-          <div class="side-menu-dim">
-            <div class="side-menu-wrap">
+          <div class="side-menu-dim" aria-hidden="true">
+            <nav class="side-menu-wrap" id="mobile-navigation" aria-label="모바일 메뉴">
               <h3 class="side-title">
                 <span>FE.Dev 류지섭</span>
-                <a href="#" class="close">
+                <button type="button" class="close" aria-label="메뉴 닫기">
                   <i class="fas fa-times"></i>
-                </a>
+                </button>
               </h3>
 
               <ul class="side-menu-list">
                 <li><a href="index.html">Intro</a></li>
-                <li><a href="#porfile">Profile</a></li>
+                <li><a href="#profile">Profile</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#career">Career</a></li>
                 <li><a href="#mbti">MBTI</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
         </div>
       </header>
@@ -168,7 +174,7 @@
           </div>
         </div>
       </section>
-      <section class="profile" id="porfile">
+      <section class="profile" id="profile">
         <div class="inner">
           <div class="profile-txt" data-aos="fade-up-right">
             <h2 class="title">ID.<span>Jiseop</span></h2>
