@@ -1,15 +1,5 @@
 const featuredProjects = [
   {
-    title: "vue-upbit-ranking",
-    category: "Vue Project",
-    description:
-      "공개 GitHub 저장소로 확인된 Vue 기반 개인 프로젝트입니다. 데이터 표시와 사용자 화면 구성을 연습한 프로젝트로 Featured에 배치했습니다.",
-    stack: ["Vue", "JavaScript"],
-    image: "images/nothum.png",
-    github: "https://github.com/ban8627/vue-upbit-ranking",
-    demo: "",
-  },
-  {
     title: "vue-ghibli",
     category: "API Practice",
     description:
